@@ -1,6 +1,7 @@
 ﻿using ISM.Application.interfaces;
 using ISM.Domain.Models;
 using ISM.Infrastructure.ISMDbcontext;
+using ISM.Infrastructure.Validation;
 
 namespace ISM.Infrastructure.Repositories
 {
@@ -21,7 +22,6 @@ namespace ISM.Infrastructure.Repositories
                 return Objectname;
             }
                 return null;
-            
         }
 
         public int Delete(int id)
@@ -35,7 +35,7 @@ namespace ISM.Infrastructure.Repositories
             return 0;
         }
 
-        public List<User> GetAll()
+        public IEnumerable<User> GetAll()
         {
             if (_ivalidation.Getall() == true) return _dbcontext.Set<User>().ToList();
             return null;

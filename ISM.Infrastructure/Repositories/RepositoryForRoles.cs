@@ -18,11 +18,8 @@ namespace ISM.Infrastructure.Repositories
               _dbcontext.Roles.Add(Objectname);
                 _dbcontext.SaveChanges();
                 return Objectname;
-            }
-            else
-            {
-                return null;
-            }
+            }  return null;
+            
         }
 
         public int Delete(int id)
@@ -33,36 +30,22 @@ namespace ISM.Infrastructure.Repositories
                 _dbcontext.SaveChanges() ;
                 return id;
             }
-           else 
-            { return 0; }
+                return 0; 
         }
 
-        public List<Role> GetAll()
+        public IEnumerable<Role> GetAll()
         {
             if (_validation.Getall() == true)
-            {
                 return _dbcontext.Roles.ToList();
-
-            }
-            else
-            {
                 return null;
-            }
+            
         }
-
         public Role Getbyid(int id)
         {
             if (_validation.Getby(id) == true)
-            {
                 return _dbcontext.Roles.Find(id);
-
-            }
-            {
                 return null;
-            }
-
         }
-
         public bool Update(Role objectname)
         {
            if(_validation.Update(objectname) == true)
@@ -70,10 +53,7 @@ namespace ISM.Infrastructure.Repositories
                 _dbcontext.SaveChanges ();
                 return true;
             }
-           else
-            {
                 return false;
-            }
         }
     }
 }
