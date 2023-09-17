@@ -1,8 +1,8 @@
 namespace Identification
 {
-    public partial class Identification : Form
+    public partial class IdentificationPage : Form
     {
-        public Identification()
+        public IdentificationPage()
         {
             InitializeComponent();
         }
