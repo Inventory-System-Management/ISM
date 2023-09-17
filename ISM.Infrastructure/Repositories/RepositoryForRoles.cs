@@ -1,13 +1,6 @@
-﻿using ISM.Application1.interfaces;
+﻿using ISM.Application.interfaces;
 using ISM.Domain.Models;
 using ISM.Infrastructure.ISMDbcontext;
-using System;
-using System.Collections.Generic;
-using System.ComponentModel.Design;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
 namespace ISM.Infrastructure.Repositories
 {
     public class RepositoryForRoles : IRepository<Role>

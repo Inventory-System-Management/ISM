@@ -1,10 +1,4 @@
-﻿using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
-
-namespace ISM.Application1.interfaces
+﻿namespace ISM.Application.interfaces
 {
     public  interface Ivalidation<T>where T : class
     {
