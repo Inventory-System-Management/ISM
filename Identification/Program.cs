@@ -1,4 +1,4 @@
-namespace Identification
+namespace ISM.WebUI
 {
     internal static class Program
     {
@@ -11,7 +11,7 @@ namespace Identification
             // To customize application configuration such as set high DPI settings or default font,
             // see https://aka.ms/applicationconfiguration.
             ApplicationConfiguration.Initialize();
-            Application.Run(new IdentificationPage());
+             System Application Run(new Identification());
         }
     }
 }

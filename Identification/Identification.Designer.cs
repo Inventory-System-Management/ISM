@@ -1,6 +1,6 @@
 ﻿namespace ISM.WebUI
 {
-    partial class MainPage
+    partial class Identification
     {
         /// <summary>
         /// Required designer variable.
@@ -28,7 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
-            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(MainPage));
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Identification));
             panel1 = new Panel();
             label5 = new Label();
             label4 = new Label();
@@ -108,6 +108,7 @@
             checkBox1.TabIndex = 5;
             checkBox1.Text = "Show Password";
             checkBox1.UseVisualStyleBackColor = true;
+            checkBox1.CheckedChanged += checkBox1_CheckedChanged;
             // 
             // label3
             // 
@@ -133,6 +134,7 @@
             Login_btn.TabIndex = 3;
             Login_btn.Text = "LOGIN";
             Login_btn.UseVisualStyleBackColor = false;
+            Login_btn.Click += Login_btn_Click;
             // 
             // textBox2
             // 
@@ -142,6 +144,7 @@
             textBox2.Name = "textBox2";
             textBox2.Size = new Size(249, 27);
             textBox2.TabIndex = 2;
+            textBox2.TextChanged += textBox2_TextChanged;
             // 
             // textBox1
             // 
@@ -151,6 +154,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(249, 27);
             textBox1.TabIndex = 1;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // label1
             // 
