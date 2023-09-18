@@ -1,6 +1,4 @@
-﻿using ISM.Application.interfaces;
-using ISM.Application.Interfaces.Order;
-using ISM.Application.Interfaces.Orders;
+﻿using ISM.Application.Interfaces.Orders;
 using ISM.Domain.Models;
 using ISM.Infrastructure.ISMDbcontext;
 using ISM.Infrastructure.Validation;
@@ -11,7 +9,7 @@ namespace ISM.Infrastructure.Repositories
     {
          private ISMdbcontext _dbcontext;
 
-        private IOrdervalidation _validation;
+        private IOrderValidation _validation;
         public RepositoriyForOrders()
         {
             _dbcontext = new ISMdbcontext();
