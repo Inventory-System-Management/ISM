@@ -1,10 +1,4 @@
-﻿using ISM.Application.Interfaces.Base;
-using ISM.Domain.Models;
-using System;
-using System.Collections.Generic;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+﻿using ISM.Infrastructure.Repositories;
 
 namespace ISM.Infrastructure.Services
 {
@@ -13,7 +7,7 @@ namespace ISM.Infrastructure.Services
         private IRepository<Role> _repository;
         public ServiceforRoles()
         {
-            _repository=new Repositories.RepositoryForRoles();
+            _repository=new RepositoryForRoles();
         }
         public Role Create(Role Objectname)
         {
