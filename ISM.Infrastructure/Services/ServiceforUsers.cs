@@ -1,4 +1,4 @@
-﻿using ISM.Application1.interfaces;
+﻿using ISM.Application.interfaces;
 using ISM.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -29,7 +29,7 @@ namespace ISM.Infrastructure.Services
            return _repository.Delete(id);
         }
 
-        public List<User> GetAll()
+        public IEnumerable<User> GetAll()
         {
             return _repository.GetAll();
         }

@@ -4,7 +4,8 @@ using ISM.Infrastructure.ISMDbcontext;
 namespace ISM.Infrastructure.Repositories
 {
     public class RepositoryForRoles : IRepository<Role>
-    {private ISMdbcontext _dbcontext;
+    {
+        private ISMdbcontext _dbcontext;
         private Validation.ValidationforRoles _validation;
         public RepositoryForRoles()
         {

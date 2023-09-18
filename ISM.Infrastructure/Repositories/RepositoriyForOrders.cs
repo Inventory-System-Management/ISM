@@ -6,7 +6,7 @@ namespace ISM.Infrastructure.Repositories
 {
     public class RepositoriyForOrders:IRepository<Order>
     {
-         {private ISMdbcontext _dbcontext;
+         private ISMdbcontext _dbcontext;
 
         private Validation.ValidationForOrders _validation;
         public RepositoriyForOrders()

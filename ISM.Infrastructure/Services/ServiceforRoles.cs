@@ -1,4 +1,4 @@
-﻿using ISM.Application1.interfaces;
+﻿using ISM.Application.interfaces;
 using ISM.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -27,7 +27,7 @@ namespace ISM.Infrastructure.Services
             return id;
         }
 
-        public List<Role> GetAll()
+        public IEnumerable<Role> GetAll()
         {
            
             return _repository.GetAll();

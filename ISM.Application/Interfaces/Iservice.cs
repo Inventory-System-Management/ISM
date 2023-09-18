@@ -11,7 +11,7 @@ namespace ISM.Application.interfaces
         public T Create(T Objectname);
         public bool Update(T objectname);
         public int Delete(int id);
-        public IEnumerable<T> GetAll();
+        //public IEnumerable<T> GetAll();
         public T Getbyid(int id);
     }
 }
