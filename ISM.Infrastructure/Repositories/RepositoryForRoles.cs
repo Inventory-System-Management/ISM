@@ -1,9 +1,10 @@
 ﻿using ISM.Application.Interfaces.Base;
+using ISM.Application.Interfaces.Roles;
 using ISM.Domain.Models;
 using ISM.Infrastructure.ISMDbcontext;
 namespace ISM.Infrastructure.Repositories
 {
-    public class RepositoryForRoles : IRepository<Role>
+    public class RepositoryForRoles : IRoleRepository
     {
         private ISMdbcontext _dbcontext;
         private Validation.ValidationforRoles _validation;

@@ -1,14 +1,15 @@
-﻿using ISM.Infrastructure.Repositories;
+﻿using ISM.Application.Interfaces.Base;
+using ISM.Application.Interfaces.Roles;
+using ISM.Domain.Models;
+using ISM.Infrastructure.Repositories;
 
 namespace ISM.Infrastructure.Services
 {
-    public class ServiceforRoles : Iservice<Role>
+    public class ServiceforRoles : IRoleService
     {
-        private IRepository<Role> _repository;
-        public ServiceforRoles()
-        {
-            _repository=new RepositoryForRoles();
-        }
+        private IRoleRepository _repository;
+        public ServiceforRoles() => _repository = new RepositoryForRoles();
+
         public Role Create(Role Objectname)
         {
             _repository.Create(Objectname);
@@ -17,13 +18,12 @@ namespace ISM.Infrastructure.Services
 
         public int Delete(int id)
         {
-           _repository.Delete(id);
+            _repository.Delete(id);
             return id;
         }
 
         public IEnumerable<Role> GetAll()
         {
-           
             return _repository.GetAll();
         }
 

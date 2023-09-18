@@ -1,4 +1,5 @@
 ﻿using ISM.Application.Interfaces.Base;
+using ISM.Application.Interfaces.Users;
 using ISM.Domain.Models;
 using System;
 using System.Collections.Generic;
@@ -9,7 +10,7 @@ using System.Threading.Tasks;
 
 namespace ISM.Infrastructure.Services
 {
-    public class ServiceforUsers : Iservice<User>
+    public class ServiceforUsers : IUserService
     {
         private IRepository<User> _repository;
         public ServiceforUsers()

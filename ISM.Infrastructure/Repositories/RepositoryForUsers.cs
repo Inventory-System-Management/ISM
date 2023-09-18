@@ -1,12 +1,13 @@
 ﻿using ISM.Application.interfaces;
 using ISM.Application.Interfaces.Base;
+using ISM.Application.Interfaces.Users;
 using ISM.Domain.Models;
 using ISM.Infrastructure.ISMDbcontext;
 using ISM.Infrastructure.Validation;
 
 namespace ISM.Infrastructure.Repositories
 {
-    public class RepositoryForUsers : IRepository<User>
+    public class RepositoryForUsers : IUserService
     {private ISMdbcontext _dbcontext;
         private Ivalidation<User> _ivalidation;
         public RepositoryForUsers()
@@ -14,11 +15,11 @@ namespace ISM.Infrastructure.Repositories
             _dbcontext = new ISMdbcontext();
             _ivalidation = new ValidationForUsers();
         }
-        public User Create(User Objectname)
+        public User? Create(User Objectname)
         {
             if (_ivalidation.Create(Objectname) == true)
             {
-                _dbcontext.Add(Objectname);
+                _dbcontext.Users.Add(Objectname);
                 _dbcontext.SaveChanges();
                 return Objectname;
             }
@@ -28,23 +29,24 @@ namespace ISM.Infrastructure.Repositories
         public int Delete(int id)
         {
             if (_ivalidation. Delete(id) == true)
-            {
-                _dbcontext.Remove(id);
+            { 
+                User? user= _dbcontext.Users.FirstOrDefault(i=>i.Id==id);
+                _dbcontext.Users.Remove(user);
                 _dbcontext.SaveChanges();
                 return id;
             }
             return 0;
         }
 
-        public IEnumerable<User> GetAll()
+        public IEnumerable<User>? GetAll()
         {
             if (_ivalidation.Getall() == true) return _dbcontext.Set<User>().ToList();
             return null;
         }
 
-        public User Getbyid(int id)
+        public User? Getbyid(int id)
         {
-            if(_ivalidation.Getby(id) == true) return _dbcontext.Set<User>().FirstOrDefault(x => x.Id == id);
+            if(_ivalidation.Getby(id) == true) return _dbcontext.Users.FirstOrDefault(x => x.Id == id);
             return null;
         }
 

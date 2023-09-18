@@ -1,10 +1,11 @@
 ﻿using ISM.Application.interfaces;
+using ISM.Application.Interfaces.Users;
 using ISM.Domain.Models;
 using ISM.Infrastructure.ISMDbcontext;
 
 namespace ISM.Infrastructure.Validation
 {
-    public class ValidationForUsers : Ivalidation<User>
+    public class ValidationForUsers : IUserValidation
     {
         private ISMdbcontext _dbcontext;
         public ValidationForUsers() => _dbcontext = new();
@@ -30,7 +31,7 @@ namespace ISM.Infrastructure.Validation
         }
         public bool Getby(int Id)
         {
-            User user = _dbcontext.Users.Select(x => x).Where((x) => x.Id == Id).First();
+            User user = _dbcontext.Users.FirstOrDefault(i=>i.Id==Id);
             if (user != null) return true;
             return false;
         }
