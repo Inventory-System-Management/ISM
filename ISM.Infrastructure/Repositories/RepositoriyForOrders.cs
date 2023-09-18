@@ -1,18 +1,21 @@
 ﻿using ISM.Application.interfaces;
+using ISM.Application.Interfaces.Order;
+using ISM.Application.Interfaces.Orders;
 using ISM.Domain.Models;
 using ISM.Infrastructure.ISMDbcontext;
+using ISM.Infrastructure.Validation;
 
 namespace ISM.Infrastructure.Repositories
 {
-    public class RepositoriyForOrders:IRepository<Order>
+    public class RepositoriyForOrders: IOrderRepository
     {
          private ISMdbcontext _dbcontext;
 
-        private Validation.ValidationForOrders _validation;
+        private IOrdervalidation _validation;
         public RepositoriyForOrders()
         {
             _dbcontext = new ISMdbcontext();
-            _validation = new Validation.ValidationForOrders();
+            _validation = new ValidationForOrders();
         }
         public Order Create(Order Objectname)
         {
@@ -23,7 +26,6 @@ namespace ISM.Infrastructure.Repositories
                 return Objectname;
             }
             return null;
-
         }
         public int Delete(int id)
         {
@@ -36,7 +38,6 @@ namespace ISM.Infrastructure.Repositories
             }
             return 0;
         }
-
         public IEnumerable<Order> GetAll()
         {
             if (_validation.Getall() == true)

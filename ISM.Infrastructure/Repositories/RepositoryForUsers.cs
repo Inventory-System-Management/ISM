@@ -1,4 +1,5 @@
 ﻿using ISM.Application.interfaces;
+using ISM.Application.Interfaces.Base;
 using ISM.Domain.Models;
 using ISM.Infrastructure.ISMDbcontext;
 using ISM.Infrastructure.Validation;

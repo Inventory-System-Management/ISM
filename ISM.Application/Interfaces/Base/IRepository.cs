@@ -4,9 +4,9 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ISM.Application.interfaces
+namespace ISM.Application.Interfaces.Base
 {
-    public interface Iservice<T> where T : class
+    public interface IRepository<T> where T : class
     {
         public T Create(T Objectname);
         public bool Update(T objectname);

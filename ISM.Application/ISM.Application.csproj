@@ -18,4 +18,9 @@
     <ProjectReference Include="..\ISM.Domain\ISM.Domain.csproj" />
   </ItemGroup>
 
+  <ItemGroup>
+    <Folder Include="Interfaces\Roles\" />
+    <Folder Include="Interfaces\User\" />
+  </ItemGroup>
+
 </Project>

@@ -4,7 +4,7 @@ using System.Linq;
 using System.Text;
 using System.Threading.Tasks;
 
-namespace ISM.Application.interfaces
+namespace ISM.Application.Interfaces.Base
 {
     public interface Iservice<T> where T : class
     {

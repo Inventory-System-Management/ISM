@@ -1,4 +1,4 @@
-﻿using ISM.Application.interfaces;
+﻿using ISM.Application.Interfaces.Base;
 using ISM.Domain.Models;
 using ISM.Infrastructure.ISMDbcontext;
 namespace ISM.Infrastructure.Repositories

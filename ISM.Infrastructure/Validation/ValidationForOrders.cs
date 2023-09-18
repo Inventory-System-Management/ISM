@@ -1,10 +1,9 @@
-﻿using ISM.Application.interfaces;
+﻿using ISM.Application.Interfaces.Orders;
 using ISM.Domain.Models;
 using ISM.Infrastructure.ISMDbcontext;
-
 namespace ISM.Infrastructure.Validation
 {
-    public class ValidationForOrders : Ivalidation<Order>
+    public class ValidationForOrders :IOrderValidation
     {
         private ISMdbcontext _dbcontext;
         public ValidationForOrders() => _dbcontext = new();
@@ -17,26 +16,26 @@ namespace ISM.Infrastructure.Validation
         }
         public bool Delete(int Id)
         {
-            var deletedobject = _dbcontext.Users.Select(x => x).Where(x => x.Id == Id);
+            var deletedobject = _dbcontext.Orders.Select(x => x).Where(x => x.Id == Id);
             if (deletedobject.Count() > 0)
                 return true;
             return false;
         }
         public bool Getall()
         {
-            List<User> list = _dbcontext.Users.ToList();
+            List<Order> list = _dbcontext.Orders.ToList();
             if (list.Count > 0) return true;
             return false;
         }
         public bool Getby(int Id)
         {
-            User user = _dbcontext.Users.Select(x => x).Where((x) => x.Id == Id).First();
-            if (user != null) return true;
+            Order order = _dbcontext.Orders.Select(x => x).Where((x) => x.Id == Id).First();
+            if (order != null) return true;
             return false;
         }
         public bool Update(Order objectname)
         {
-            var Updateobject = _dbcontext.Users.Find(objectname.Id);
+            var Updateobject = _dbcontext.Orders.Find(objectname.Id);
             if (Updateobject != null)
                 return true;
             return false;

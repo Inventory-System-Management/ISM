@@ -1,4 +1,4 @@
-﻿using ISM.Application.interfaces;
+﻿using ISM.Application.Interfaces.Base;
 using ISM.Domain.Models;
 using System;
 using System.Collections.Generic;
