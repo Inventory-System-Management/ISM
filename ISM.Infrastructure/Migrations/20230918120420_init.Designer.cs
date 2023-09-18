@@ -12,8 +12,8 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ISM.Infrastructure.Migrations
 {
     [DbContext(typeof(ISMdbcontext))]
-    [Migration("20230916200146_initdb")]
-    partial class initdb
+    [Migration("20230918120420_init")]
+    partial class init
     {
         /// <inheritdoc />
         protected override void BuildTargetModel(ModelBuilder modelBuilder)
@@ -42,6 +42,9 @@ namespace ISM.Infrastructure.Migrations
                     b.Property<int>("Quantity")
                         .HasColumnType("integer");
 
+                    b.Property<int?>("StorageId")
+                        .HasColumnType("integer");
+
                     b.Property<int>("SupplierId")
                         .HasColumnType("integer");
 
@@ -50,7 +53,7 @@ namespace ISM.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Id");
+                    b.HasIndex("StorageId");
 
                     b.HasIndex("SupplierId");
 
@@ -79,8 +82,6 @@ namespace ISM.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Id");
-
                     b.HasIndex("UserId");
 
                     b.ToTable("Orders");
@@ -105,8 +106,6 @@ namespace ISM.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Id");
-
                     b.HasIndex("OrderId")
                         .IsUnique();
 
@@ -127,8 +126,6 @@ namespace ISM.Infrastructure.Migrations
                         .HasColumnType("integer");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("Id");
 
                     b.ToTable("Roles");
                 });
@@ -154,8 +151,6 @@ namespace ISM.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Id");
-
                     b.ToTable("Storages");
                 });
 
@@ -177,8 +172,6 @@ namespace ISM.Infrastructure.Migrations
                         .HasColumnType("text");
 
                     b.HasKey("Id");
-
-                    b.HasIndex("Id");
 
                     b.ToTable("Suppliers");
                 });
@@ -219,20 +212,25 @@ namespace ISM.Infrastructure.Migrations
 
                     b.HasKey("Id");
 
-                    b.HasIndex("Id");
-
-                    b.HasIndex("RoleId");
+                    b.HasIndex("RoleId")
+                        .IsUnique();
 
                     b.ToTable("Users");
                 });
 
             modelBuilder.Entity("ISM.Domain.Models.Material", b =>
                 {
+                    b.HasOne("ISM.Domain.Models.Storage", "Storage")
+                        .WithMany("Materials")
+                        .HasForeignKey("StorageId");
+
                     b.HasOne("ISM.Domain.Models.Supplier", "Supplier")
                         .WithMany()
                         .HasForeignKey("SupplierId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
+
+                    b.Navigation("Storage");
 
                     b.Navigation("Supplier");
                 });
@@ -268,8 +266,8 @@ namespace ISM.Infrastructure.Migrations
             modelBuilder.Entity("ISM.Domain.Models.User", b =>
                 {
                     b.HasOne("ISM.Domain.Models.Role", "Role")
-                        .WithMany()
-                        .HasForeignKey("RoleId")
+                        .WithOne("User")
+                        .HasForeignKey("ISM.Domain.Models.User", "RoleId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
 
@@ -279,6 +277,16 @@ namespace ISM.Infrastructure.Migrations
             modelBuilder.Entity("ISM.Domain.Models.Order", b =>
                 {
                     b.Navigation("Order_Detail");
+                });
+
+            modelBuilder.Entity("ISM.Domain.Models.Role", b =>
+                {
+                    b.Navigation("User");
+                });
+
+            modelBuilder.Entity("ISM.Domain.Models.Storage", b =>
+                {
+                    b.Navigation("Materials");
                 });
 
             modelBuilder.Entity("ISM.Domain.Models.User", b =>

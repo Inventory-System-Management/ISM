@@ -1,6 +1,7 @@
 ﻿using ISM.Application.Interfaces.Base;
 using ISM.Application.Interfaces.Users;
 using ISM.Domain.Models;
+using ISM.Infrastructure.Repositories;
 using System;
 using System.Collections.Generic;
 using System.Diagnostics.CodeAnalysis;
@@ -12,11 +13,11 @@ namespace ISM.Infrastructure.Services
 {
     public class ServiceforUsers : IUserService
     {
-        private IRepository<User> _repository;
+        private IUserRepository _repository;
         public ServiceforUsers()
         {
             
-            _repository=new Repositories.RepositoryForUsers();
+            _repository=new RepositoryForUsers();
         }
         public User Create(User Objectname)
         {

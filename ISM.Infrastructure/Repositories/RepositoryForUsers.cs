@@ -7,9 +7,9 @@ using ISM.Infrastructure.Validation;
 
 namespace ISM.Infrastructure.Repositories
 {
-    public class RepositoryForUsers : IUserService
+    public class RepositoryForUsers : IUserRepository
     {private ISMdbcontext _dbcontext;
-        private Ivalidation<User> _ivalidation;
+        private IUserValidation _ivalidation;
         public RepositoryForUsers()
         {
             _dbcontext = new ISMdbcontext();

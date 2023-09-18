@@ -7,7 +7,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ISM.Infrastructure.Migrations
 {
     /// <inheritdoc />
-    public partial class initdb : Migration
+    public partial class init : Migration
     {
         /// <inheritdoc />
         protected override void Up(MigrationBuilder migrationBuilder)
@@ -90,11 +90,17 @@ namespace ISM.Infrastructure.Migrations
                     Description = table.Column<string>(type: "text", nullable: true),
                     Quantity = table.Column<int>(type: "integer", nullable: false),
                     UnitPrice = table.Column<decimal>(type: "numeric", nullable: false),
+                    StorageId = table.Column<int>(type: "integer", nullable: true),
                     SupplierId = table.Column<int>(type: "integer", nullable: false)
                 },
                 constraints: table =>
                 {
                     table.PrimaryKey("PK_Materials", x => x.Id);
+                    table.ForeignKey(
+                        name: "FK_Materials_Storages_StorageId",
+                        column: x => x.StorageId,
+                        principalTable: "Storages",
+                        principalColumn: "Id");
                     table.ForeignKey(
                         name: "FK_Materials_Suppliers_SupplierId",
                         column: x => x.SupplierId,
@@ -153,19 +159,14 @@ namespace ISM.Infrastructure.Migrations
                 });
 
             migrationBuilder.CreateIndex(
-                name: "IX_Materials_Id",
+                name: "IX_Materials_StorageId",
                 table: "Materials",
-                column: "Id");
+                column: "StorageId");
 
             migrationBuilder.CreateIndex(
                 name: "IX_Materials_SupplierId",
                 table: "Materials",
                 column: "SupplierId");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_OrderDetails_Id",
-                table: "OrderDetails",
-                column: "Id");
 
             migrationBuilder.CreateIndex(
                 name: "IX_OrderDetails_OrderId",
@@ -179,39 +180,15 @@ namespace ISM.Infrastructure.Migrations
                 column: "StorageId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Orders_Id",
-                table: "Orders",
-                column: "Id");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Orders_UserId",
                 table: "Orders",
                 column: "UserId");
 
             migrationBuilder.CreateIndex(
-                name: "IX_Roles_Id",
-                table: "Roles",
-                column: "Id");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Storages_Id",
-                table: "Storages",
-                column: "Id");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Suppliers_Id",
-                table: "Suppliers",
-                column: "Id");
-
-            migrationBuilder.CreateIndex(
-                name: "IX_Users_Id",
-                table: "Users",
-                column: "Id");
-
-            migrationBuilder.CreateIndex(
                 name: "IX_Users_RoleId",
                 table: "Users",
-                column: "RoleId");
+                column: "RoleId",
+                unique: true);
         }
 
         /// <inheritdoc />

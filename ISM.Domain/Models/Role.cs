@@ -5,5 +5,7 @@ namespace ISM.Domain.Models
     {
         public int Id { get; set; }
         public RoleE RoleE { get; set; }
+
+        public User? User { get; set; }
     }
 }
