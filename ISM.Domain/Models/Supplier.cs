@@ -6,5 +6,6 @@
         public string? Name { get; set; }
         public string? ContactInfo { get; set; }
         public string? Address { get; set; } = string.Empty;
+        public IList<Material>? Materials { get; set; }
     }
 }

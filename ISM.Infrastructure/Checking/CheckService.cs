@@ -18,9 +18,8 @@ namespace ISM.Infrastructure.Checking
 
         public User Password(string Email, string password)
         {
-
-            var users = _users.GetAll();
-            var ourUser = users.FirstOrDefault(x => x.Email == Email && x.Password == password);
+            var users = _users;
+            var ourUser = users.GetAll().FirstOrDefault(x => x.Email == Email && x.Password == password);
             if (ourUser != null)
                 return ourUser;
             return null;

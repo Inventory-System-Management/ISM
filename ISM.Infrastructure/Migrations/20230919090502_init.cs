@@ -18,7 +18,7 @@ namespace ISM.Infrastructure.Migrations
                 {
                     Id = table.Column<int>(type: "integer", nullable: false)
                         .Annotation("Npgsql:ValueGenerationStrategy", NpgsqlValueGenerationStrategy.IdentityByDefaultColumn),
-                    RoleE = table.Column<int>(type: "integer", nullable: false)
+                    Position = table.Column<string>(type: "text", nullable: false)
                 },
                 constraints: table =>
                 {

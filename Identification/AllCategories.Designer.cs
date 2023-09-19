@@ -32,30 +32,30 @@
             panel1 = new Panel();
             label2 = new Label();
             label1 = new Label();
-            pictureBox1 = new PictureBox();
+            OrderPictureBox = new PictureBox();
             label3 = new Label();
-            pictureBox2 = new PictureBox();
+            MaterialsPictureBox = new PictureBox();
             label4 = new Label();
             label5 = new Label();
-            pictureBox3 = new PictureBox();
-            pictureBox4 = new PictureBox();
+            RolesPictureBox = new PictureBox();
+            UsersPictureBox = new PictureBox();
             label6 = new Label();
-            pictureBox5 = new PictureBox();
+            StoragePictureBox = new PictureBox();
             label7 = new Label();
             label8 = new Label();
-            pictureBox6 = new PictureBox();
+            BudgetPictureBox = new PictureBox();
             label9 = new Label();
-            pictureBox7 = new PictureBox();
+            SuppliersPictureBox = new PictureBox();
             label10 = new Label();
             pictureBox8 = new PictureBox();
             panel1.SuspendLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).BeginInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)OrderPictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)MaterialsPictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)RolesPictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)UsersPictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)StoragePictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)BudgetPictureBox).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)SuppliersPictureBox).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).BeginInit();
             SuspendLayout();
             // 
@@ -95,15 +95,16 @@
             label1.TabIndex = 0;
             label1.Text = "All Categories";
             // 
-            // pictureBox1
+            // OrderPictureBox
             // 
-            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(72, 167);
-            pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(105, 92);
-            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox1.TabIndex = 1;
-            pictureBox1.TabStop = false;
+            OrderPictureBox.Image = (Image)resources.GetObject("OrderPictureBox.Image");
+            OrderPictureBox.Location = new Point(72, 167);
+            OrderPictureBox.Name = "OrderPictureBox";
+            OrderPictureBox.Size = new Size(105, 92);
+            OrderPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            OrderPictureBox.TabIndex = 1;
+            OrderPictureBox.TabStop = false;
+            OrderPictureBox.Click += pictureBox1_Click;
             // 
             // label3
             // 
@@ -117,15 +118,15 @@
             label3.TabIndex = 2;
             label3.Text = "Orders";
             // 
-            // pictureBox2
+            // MaterialsPictureBox
             // 
-            pictureBox2.Image = (Image)resources.GetObject("pictureBox2.Image");
-            pictureBox2.Location = new Point(454, 167);
-            pictureBox2.Name = "pictureBox2";
-            pictureBox2.Size = new Size(116, 92);
-            pictureBox2.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox2.TabIndex = 3;
-            pictureBox2.TabStop = false;
+            MaterialsPictureBox.Image = (Image)resources.GetObject("MaterialsPictureBox.Image");
+            MaterialsPictureBox.Location = new Point(454, 167);
+            MaterialsPictureBox.Name = "MaterialsPictureBox";
+            MaterialsPictureBox.Size = new Size(116, 92);
+            MaterialsPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            MaterialsPictureBox.TabIndex = 3;
+            MaterialsPictureBox.TabStop = false;
             // 
             // label4
             // 
@@ -151,25 +152,26 @@
             label5.TabIndex = 5;
             label5.Text = "Roles";
             // 
-            // pictureBox3
+            // RolesPictureBox
             // 
-            pictureBox3.Image = (Image)resources.GetObject("pictureBox3.Image");
-            pictureBox3.Location = new Point(72, 542);
-            pictureBox3.Name = "pictureBox3";
-            pictureBox3.Size = new Size(116, 92);
-            pictureBox3.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox3.TabIndex = 6;
-            pictureBox3.TabStop = false;
+            RolesPictureBox.Image = (Image)resources.GetObject("RolesPictureBox.Image");
+            RolesPictureBox.Location = new Point(72, 542);
+            RolesPictureBox.Name = "RolesPictureBox";
+            RolesPictureBox.Size = new Size(116, 92);
+            RolesPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            RolesPictureBox.TabIndex = 6;
+            RolesPictureBox.TabStop = false;
+            RolesPictureBox.Click += RolesPictureBox_Click;
             // 
-            // pictureBox4
+            // UsersPictureBox
             // 
-            pictureBox4.Image = (Image)resources.GetObject("pictureBox4.Image");
-            pictureBox4.Location = new Point(454, 542);
-            pictureBox4.Name = "pictureBox4";
-            pictureBox4.Size = new Size(116, 92);
-            pictureBox4.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox4.TabIndex = 7;
-            pictureBox4.TabStop = false;
+            UsersPictureBox.Image = (Image)resources.GetObject("UsersPictureBox.Image");
+            UsersPictureBox.Location = new Point(454, 542);
+            UsersPictureBox.Name = "UsersPictureBox";
+            UsersPictureBox.Size = new Size(116, 92);
+            UsersPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            UsersPictureBox.TabIndex = 7;
+            UsersPictureBox.TabStop = false;
             // 
             // label6
             // 
@@ -183,15 +185,16 @@
             label6.TabIndex = 9;
             label6.Text = "Storage";
             // 
-            // pictureBox5
+            // StoragePictureBox
             // 
-            pictureBox5.Image = (Image)resources.GetObject("pictureBox5.Image");
-            pictureBox5.Location = new Point(853, 167);
-            pictureBox5.Name = "pictureBox5";
-            pictureBox5.Size = new Size(105, 92);
-            pictureBox5.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox5.TabIndex = 8;
-            pictureBox5.TabStop = false;
+            StoragePictureBox.Image = (Image)resources.GetObject("StoragePictureBox.Image");
+            StoragePictureBox.Location = new Point(853, 167);
+            StoragePictureBox.Name = "StoragePictureBox";
+            StoragePictureBox.Size = new Size(105, 92);
+            StoragePictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            StoragePictureBox.TabIndex = 8;
+            StoragePictureBox.TabStop = false;
+            StoragePictureBox.Click += pictureBox5_Click;
             // 
             // label7
             // 
@@ -217,15 +220,15 @@
             label8.TabIndex = 12;
             label8.Text = "Budget";
             // 
-            // pictureBox6
+            // BudgetPictureBox
             // 
-            pictureBox6.Image = (Image)resources.GetObject("pictureBox6.Image");
-            pictureBox6.Location = new Point(245, 357);
-            pictureBox6.Name = "pictureBox6";
-            pictureBox6.Size = new Size(116, 92);
-            pictureBox6.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox6.TabIndex = 11;
-            pictureBox6.TabStop = false;
+            BudgetPictureBox.Image = (Image)resources.GetObject("BudgetPictureBox.Image");
+            BudgetPictureBox.Location = new Point(245, 357);
+            BudgetPictureBox.Name = "BudgetPictureBox";
+            BudgetPictureBox.Size = new Size(116, 92);
+            BudgetPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            BudgetPictureBox.TabIndex = 11;
+            BudgetPictureBox.TabStop = false;
             // 
             // label9
             // 
@@ -239,15 +242,15 @@
             label9.TabIndex = 14;
             label9.Text = "Suppliers";
             // 
-            // pictureBox7
+            // SuppliersPictureBox
             // 
-            pictureBox7.Image = (Image)resources.GetObject("pictureBox7.Image");
-            pictureBox7.Location = new Point(669, 357);
-            pictureBox7.Name = "pictureBox7";
-            pictureBox7.Size = new Size(116, 92);
-            pictureBox7.SizeMode = PictureBoxSizeMode.Zoom;
-            pictureBox7.TabIndex = 13;
-            pictureBox7.TabStop = false;
+            SuppliersPictureBox.Image = (Image)resources.GetObject("SuppliersPictureBox.Image");
+            SuppliersPictureBox.Location = new Point(669, 357);
+            SuppliersPictureBox.Name = "SuppliersPictureBox";
+            SuppliersPictureBox.Size = new Size(116, 92);
+            SuppliersPictureBox.SizeMode = PictureBoxSizeMode.Zoom;
+            SuppliersPictureBox.TabIndex = 13;
+            SuppliersPictureBox.TabStop = false;
             // 
             // label10
             // 
@@ -282,19 +285,19 @@
             Controls.Add(label10);
             Controls.Add(pictureBox8);
             Controls.Add(label9);
-            Controls.Add(pictureBox7);
+            Controls.Add(SuppliersPictureBox);
             Controls.Add(label8);
-            Controls.Add(pictureBox6);
+            Controls.Add(BudgetPictureBox);
             Controls.Add(label7);
             Controls.Add(label6);
-            Controls.Add(pictureBox5);
-            Controls.Add(pictureBox4);
-            Controls.Add(pictureBox3);
+            Controls.Add(StoragePictureBox);
+            Controls.Add(UsersPictureBox);
+            Controls.Add(RolesPictureBox);
             Controls.Add(label5);
             Controls.Add(label4);
-            Controls.Add(pictureBox2);
+            Controls.Add(MaterialsPictureBox);
             Controls.Add(label3);
-            Controls.Add(pictureBox1);
+            Controls.Add(OrderPictureBox);
             Controls.Add(panel1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "AllCategories";
@@ -302,13 +305,13 @@
             Text = "AllCategories";
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
-            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox2).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox3).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox4).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox5).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox6).EndInit();
-            ((System.ComponentModel.ISupportInitialize)pictureBox7).EndInit();
+            ((System.ComponentModel.ISupportInitialize)OrderPictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)MaterialsPictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)RolesPictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)UsersPictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)StoragePictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)BudgetPictureBox).EndInit();
+            ((System.ComponentModel.ISupportInitialize)SuppliersPictureBox).EndInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox8).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -319,20 +322,20 @@
         private Panel panel1;
         private Label label1;
         private Label label2;
-        private PictureBox pictureBox1;
+        private PictureBox OrderPictureBox;
         private Label label3;
-        private PictureBox pictureBox2;
+        private PictureBox MaterialsPictureBox;
         private Label label4;
         private Label label5;
-        private PictureBox pictureBox3;
-        private PictureBox pictureBox4;
+        private PictureBox RolesPictureBox;
+        private PictureBox UsersPictureBox;
         private Label label6;
-        private PictureBox pictureBox5;
+        private PictureBox StoragePictureBox;
         private Label label7;
         private Label label8;
-        private PictureBox pictureBox6;
+        private PictureBox BudgetPictureBox;
         private Label label9;
-        private PictureBox pictureBox7;
+        private PictureBox SuppliersPictureBox;
         private Label label10;
         private PictureBox pictureBox8;
     }

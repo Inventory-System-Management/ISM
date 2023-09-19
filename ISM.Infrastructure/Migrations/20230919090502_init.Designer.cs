@@ -12,7 +12,7 @@ using Npgsql.EntityFrameworkCore.PostgreSQL.Metadata;
 namespace ISM.Infrastructure.Migrations
 {
     [DbContext(typeof(ISMdbcontext))]
-    [Migration("20230918153350_init")]
+    [Migration("20230919090502_init")]
     partial class init
     {
         /// <inheritdoc />
@@ -122,8 +122,9 @@ namespace ISM.Infrastructure.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<int>("RoleE")
-                        .HasColumnType("integer");
+                    b.Property<string>("Position")
+                        .IsRequired()
+                        .HasColumnType("text");
 
                     b.HasKey("Id");
 
@@ -218,7 +219,7 @@ namespace ISM.Infrastructure.Migrations
                         .HasForeignKey("StorageId");
 
                     b.HasOne("ISM.Domain.Models.Supplier", "Supplier")
-                        .WithMany()
+                        .WithMany("Materials")
                         .HasForeignKey("SupplierId")
                         .OnDelete(DeleteBehavior.Cascade)
                         .IsRequired();
@@ -278,6 +279,11 @@ namespace ISM.Infrastructure.Migrations
                 });
 
             modelBuilder.Entity("ISM.Domain.Models.Storage", b =>
+                {
+                    b.Navigation("Materials");
+                });
+
+            modelBuilder.Entity("ISM.Domain.Models.Supplier", b =>
                 {
                     b.Navigation("Materials");
                 });

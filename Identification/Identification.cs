@@ -1,5 +1,4 @@
-﻿using dotnet_winforms_examples;
-using ISM.Application.Interfaces;
+﻿using ISM.Application.Interfaces;
 using ISM.Infrastructure.Checking;
 
 namespace ISM.WebUI
@@ -19,7 +18,8 @@ namespace ISM.WebUI
             var user = _checks.Password(textBox1.Text, textBox2.Text);
             if (user != null)
             {
-                AllCategories allCategories = new();
+                AllCategories allCategories = new(user);
+
                 allCategories.Text = "Navigation Bar Example";
                 allCategories.Location = new Point(0, 0);
                 this.Hide();
