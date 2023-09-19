@@ -10,13 +10,11 @@ public class ServiceforStorage : IStorageService
     public ServiceforStorage() => _repository = new RepositoryforStorage();
     public Storage Create(Storage Objectname)
     {
-
         return _repository.Create(Objectname);
     }
 
     public int Delete(int id)
     {
-        
         return _repository.Delete(id);
     }
 

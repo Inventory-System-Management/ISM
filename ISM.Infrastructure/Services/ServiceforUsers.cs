@@ -16,7 +16,6 @@ namespace ISM.Infrastructure.Services
         private IUserRepository _repository;
         public ServiceforUsers()
         {
-            
             _repository=new RepositoryForUsers();
         }
         public User Create(User Objectname)

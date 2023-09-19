@@ -144,7 +144,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;label2.ZOrder" xml:space="preserve">
-    <value>12</value>
+    <value>11</value>
   </data>
   <data name="button5.Location" type="System.Drawing.Point, System.Drawing">
     <value>761, -2</value>
@@ -168,7 +168,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button5.ZOrder" xml:space="preserve">
-    <value>11</value>
+    <value>10</value>
   </data>
   <data name="label1.AutoSize" type="System.Boolean, mscorlib">
     <value>True</value>
@@ -197,21 +197,9 @@
   <metadata name="OrderId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="OrderId.HeaderText" xml:space="preserve">
-    <value>Id</value>
-  </data>
-  <data name="OrderId.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
   <metadata name="PositionName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="PositionName.HeaderText" xml:space="preserve">
-    <value>Position</value>
-  </data>
-  <data name="PositionName.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
     <value>242, 41</value>
   </data>
@@ -236,8 +224,26 @@
   <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
     <value>4</value>
   </data>
+  <metadata name="OrderId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="OrderId.HeaderText" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="OrderId.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <metadata name="PositionName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="PositionName.HeaderText" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="PositionName.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
-    <value>280, 379</value>
+    <value>42, 257</value>
   </data>
   <data name="button4.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 44</value>
@@ -261,7 +267,7 @@
     <value>7</value>
   </data>
   <data name="button3.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 274</value>
+    <value>42, 207</value>
   </data>
   <data name="button3.Size" type="System.Drawing.Size, System.Drawing">
     <value>124, 44</value>
@@ -283,30 +289,6 @@
   </data>
   <data name="&gt;&gt;button3.ZOrder" xml:space="preserve">
     <value>8</value>
-  </data>
-  <data name="button2.Location" type="System.Drawing.Point, System.Drawing">
-    <value>42, 216</value>
-  </data>
-  <data name="button2.Size" type="System.Drawing.Size, System.Drawing">
-    <value>124, 44</value>
-  </data>
-  <data name="button2.TabIndex" type="System.Int32, mscorlib">
-    <value>10</value>
-  </data>
-  <data name="button2.Text" xml:space="preserve">
-    <value>Edit</value>
-  </data>
-  <data name="&gt;&gt;button2.Name" xml:space="preserve">
-    <value>button2</value>
-  </data>
-  <data name="&gt;&gt;button2.Type" xml:space="preserve">
-    <value>System.Windows.Forms.Button, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;button2.Parent" xml:space="preserve">
-    <value>$this</value>
-  </data>
-  <data name="&gt;&gt;button2.ZOrder" xml:space="preserve">
-    <value>9</value>
   </data>
   <data name="button1.Location" type="System.Drawing.Point, System.Drawing">
     <value>42, 155</value>
@@ -330,7 +312,7 @@
     <value>$this</value>
   </data>
   <data name="&gt;&gt;button1.ZOrder" xml:space="preserve">
-    <value>10</value>
+    <value>9</value>
   </data>
   <data name="vScrollBar1.Location" type="System.Drawing.Point, System.Drawing">
     <value>774, 41</value>

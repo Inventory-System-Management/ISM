@@ -15,7 +15,6 @@ public class ServiceForMaterial
 
     public int Delete(int id)
     {
-        
         return _repository.Delete(id);
     }
 

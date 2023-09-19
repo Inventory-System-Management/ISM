@@ -10,13 +10,11 @@ namespace ISM.Infrastructure.Services
 
         public Role Create(Role Objectname)
         {
-
             return _repository.Create(Objectname);
         }
 
         public int Delete(int id)
         {
-
             return _repository.Delete(id);
         }
 
