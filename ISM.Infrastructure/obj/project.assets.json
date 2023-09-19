@@ -712,11 +712,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Infrastructure\\ISM.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Infrastructure\\ISM.Infrastructure.csproj",
       "projectName": "ISM.Infrastructure",
-      "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Infrastructure\\ISM.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Infrastructure\\ISM.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -738,8 +738,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Application\\ISM.Application.csproj": {
-              "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Application\\ISM.Application.csproj"
+            "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Application\\ISM.Application.csproj": {
+              "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Application\\ISM.Application.csproj"
             }
           }
         }

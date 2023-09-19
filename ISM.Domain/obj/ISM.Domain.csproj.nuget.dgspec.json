@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Domain\\ISM.Domain.csproj": {}
+    "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Domain\\ISM.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Domain\\ISM.Domain.csproj": {
+    "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Domain\\ISM.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Domain\\ISM.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Domain\\ISM.Domain.csproj",
         "projectName": "ISM.Domain",
-        "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Domain\\ISM.Domain.csproj",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Domain\\ISM.Domain.csproj",
         "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Domain\\obj\\",
+        "outputPath": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
