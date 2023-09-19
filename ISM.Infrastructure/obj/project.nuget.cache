@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "J5GL1IS4dkCUGCWbY6fE9WPHVgGUmLkAVOWBiuIaSnqkl+3znbiz/JL+N2GQJxKcEIl4pItDPSONoyo1/Qh2dw==",
+  "dgSpecHash": "y38B5aeTwzRZNQJOfqU73YEnSKx8f/F9EO4nmVguuTVOIgb5oQJqqEKgrQUNQOPgbz+i/j5/HWb7DvoJ97u6BA==",
   "success": true,
   "projectFilePath": "C:\\Users\\suoki\\Desktop\\C#\\ISM.Infrastructure\\ISM.Infrastructure.csproj",
-=======
-  "dgSpecHash": "MsKKI7N2xRNNJteZGsKFfsCzq4qvCNUrqy+1Mq+Gjjjbdr9V1UtLsbkWuww8fR4Yh/5s5mkAwKkJSIQd/8K5PA==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Infrastructure\\ISM.Infrastructure.csproj",
->>>>>>> fc82545a79f737d09246fb9cd027895b7db13d28
   "expectedPackageFiles": [
     "C:\\Users\\suoki\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
     "C:\\Users\\suoki\\.nuget\\packages\\microsoft.entityframeworkcore.abstractions\\7.0.11\\microsoft.entityframeworkcore.abstractions.7.0.11.nupkg.sha512",

@@ -18,7 +18,7 @@ namespace ISM.WebUI
         private readonly ServiceforRoles _serviceforRoles;
         public Roles()
         {
-            _serviceforRoles = new();
+            _serviceforRoles = new ServiceforRoles();
             _allCategories = new();
             InitializeComponent();
             var allRoles = _serviceforRoles.GetAll();
@@ -42,6 +42,11 @@ namespace ISM.WebUI
 
         }
 
+        //private ServiceforRoles Get_serviceforRoles()
+        //{
+        //    return _serviceforRoles;
+        //}
+
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text.Length != 0) MessageBox.Show("Id is Serialize");
@@ -54,7 +59,7 @@ namespace ISM.WebUI
             {
                 Role roles = new Role();
                 var Allroles = _serviceforRoles.GetAll();
-                Role? role=  Allroles.FirstOrDefault(x => x.Position == roles.Position);
+                Role? role = Allroles.FirstOrDefault(x => x.Position == roles.Position);
                 if (role == null)
                 {
                     roles = role;

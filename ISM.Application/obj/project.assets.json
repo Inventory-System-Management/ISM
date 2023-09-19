@@ -1048,19 +1048,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\suoki\\Desktop\\C#\\ISM.Application\\ISM.Application.csproj",
       "projectName": "ISM.Application",
       "projectPath": "C:\\Users\\suoki\\Desktop\\C#\\ISM.Application\\ISM.Application.csproj",
       "packagesPath": "C:\\Users\\suoki\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\suoki\\Desktop\\C#\\ISM.Application\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Application\\ISM.Application.csproj",
-      "projectName": "ISM.Application",
-      "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Application\\ISM.Application.csproj",
-      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Application\\obj\\",
->>>>>>> fc82545a79f737d09246fb9cd027895b7db13d28
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
@@ -1082,13 +1074,8 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-<<<<<<< HEAD
             "C:\\Users\\suoki\\Desktop\\C#\\ISM.Domain\\ISM.Domain.csproj": {
               "projectPath": "C:\\Users\\suoki\\Desktop\\C#\\ISM.Domain\\ISM.Domain.csproj"
-=======
-            "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Domain\\ISM.Domain.csproj": {
-              "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Domain\\ISM.Domain.csproj"
->>>>>>> fc82545a79f737d09246fb9cd027895b7db13d28
             }
           }
         }

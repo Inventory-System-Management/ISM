@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
   "dgSpecHash": "DzORJ1iKXR2b0bQbIfZLyxEcjRRNgt+6rnUUYe+2vIPhOkRZZtysZUz2XznI1Fiay3ZHV71T56pTJjdUpm2HtA==",
   "success": true,
   "projectFilePath": "C:\\Users\\suoki\\Desktop\\C#\\ISM.Application\\ISM.Application.csproj",
-=======
-  "dgSpecHash": "abunMzHYJJ1LxcfLF8bjJbunT7nmsKgV/Ll9aeE9DY3fBiYEb4gZS45Ce4qtYMMO/pShpcQpeH2P1xk7LpDUkA==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Application\\ISM.Application.csproj",
->>>>>>> fc82545a79f737d09246fb9cd027895b7db13d28
   "expectedPackageFiles": [
     "C:\\Users\\suoki\\.nuget\\packages\\humanizer.core\\2.14.1\\humanizer.core.2.14.1.nupkg.sha512",
     "C:\\Users\\suoki\\.nuget\\packages\\microsoft.entityframeworkcore\\7.0.11\\microsoft.entityframeworkcore.7.0.11.nupkg.sha512",
