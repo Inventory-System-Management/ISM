@@ -40,6 +40,10 @@
             button2 = new Button();
             button1 = new Button();
             vScrollBar1 = new VScrollBar();
+            textBox1 = new TextBox();
+            textBox2 = new TextBox();
+            label3 = new Label();
+            label4 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -111,10 +115,34 @@
             resources.ApplyResources(vScrollBar1, "vScrollBar1");
             vScrollBar1.Name = "vScrollBar1";
             // 
+            // textBox1
+            // 
+            resources.ApplyResources(textBox1, "textBox1");
+            textBox1.Name = "textBox1";
+            // 
+            // textBox2
+            // 
+            resources.ApplyResources(textBox2, "textBox2");
+            textBox2.Name = "textBox2";
+            // 
+            // label3
+            // 
+            resources.ApplyResources(label3, "label3");
+            label3.Name = "label3";
+            // 
+            // label4
+            // 
+            resources.ApplyResources(label4, "label4");
+            label4.Name = "label4";
+            // 
             // Roles
             // 
             resources.ApplyResources(this, "$this");
             AutoScaleMode = AutoScaleMode.Font;
+            Controls.Add(label4);
+            Controls.Add(label3);
+            Controls.Add(textBox2);
+            Controls.Add(textBox1);
             Controls.Add(dataGridView1);
             Controls.Add(vScrollBar1);
             Controls.Add(label1);
@@ -126,6 +154,7 @@
             Controls.Add(label2);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Roles";
+            Load += Roles_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();
@@ -144,5 +173,9 @@
         private VScrollBar vScrollBar1;
         private DataGridViewTextBoxColumn OrderId;
         private DataGridViewTextBoxColumn PositionName;
+        private TextBox textBox1;
+        private TextBox textBox2;
+        private Label label3;
+        private Label label4;
     }
 }

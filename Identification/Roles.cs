@@ -1,4 +1,5 @@
-﻿using ISM.Infrastructure.Services;
+﻿using ISM.Domain.Models;
+using ISM.Infrastructure.Services;
 using System;
 using System.Collections.Generic;
 using System.ComponentModel;
@@ -23,7 +24,7 @@ namespace ISM.WebUI
             var allRoles = _serviceforRoles.GetAll();
             foreach (var role in allRoles)
             {
-                dataGridView1.Rows.Add(role.Id,role.Position);
+                dataGridView1.Rows.Add(role.Id, role.Position);
             }
         }
         private void button5_Click(object sender, EventArgs e) =>
@@ -42,6 +43,30 @@ namespace ISM.WebUI
         }
 
         private void button1_Click(object sender, EventArgs e)
+        {
+            if (textBox1.Text.Length != 0) MessageBox.Show("Id is Serialize");
+            if (textBox2.Text.Length == 0) MessageBox.Show("Enter Position!" );
+            string position = this.textBox2.Text;
+            if (position.Equals("Manager", StringComparison.OrdinalIgnoreCase) ||
+            position.Equals("Seller", StringComparison.OrdinalIgnoreCase) ||
+            position.Equals("Manager", StringComparison.OrdinalIgnoreCase) ||
+            position.Equals("Customer", StringComparison.OrdinalIgnoreCase))
+            {
+                Role roles = new Role();
+                var Allroles = _serviceforRoles.GetAll();
+                Role? role=  Allroles.FirstOrDefault(x => x.Position == roles.Position);
+                if (role == null)
+                {
+                    roles = role;
+                    _serviceforRoles.Create(roles);
+                }
+                else MessageBox.Show("This Position exist");
+
+
+            }
+        }
+
+        private void Roles_Load(object sender, EventArgs e)
         {
 
         }
