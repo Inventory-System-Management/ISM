@@ -21,7 +21,6 @@ namespace ISM.Infrastructure.Repositories
             {
                 _dbcontext.Orders.Add(Objectname);
                 _dbcontext.SaveChanges();
-                Console.WriteLine();
                 return Objectname;
             }
             return null;
