@@ -17,6 +17,7 @@
 
   <ItemGroup>
     <ProjectReference Include="..\ISM.Application\ISM.Application.csproj" />
+    <ProjectReference Include="..\ISM.Domain\ISM.Domain.csproj" />
     <ProjectReference Include="..\ISM.Infrastructure\ISM.Infrastructure.csproj" />
   </ItemGroup>
 
