@@ -1,13 +1,7 @@
-﻿using ISM.Application.Interfaces.Base;
-using ISM.Application.Interfaces.Users;
+﻿using ISM.Application.Interfaces.Users;
 using ISM.Domain.Models;
 using ISM.Infrastructure.Repositories;
-using System;
-using System.Collections.Generic;
-using System.Diagnostics.CodeAnalysis;
-using System.Linq;
-using System.Text;
-using System.Threading.Tasks;
+
 
 namespace ISM.Infrastructure.Services
 {

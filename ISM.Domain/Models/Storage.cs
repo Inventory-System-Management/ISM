@@ -7,5 +7,5 @@
         public string Description { get; set; }=string .Empty;   
         public int Amount { get; set; }
         public List<Material>? Materials { get; set; }
-    }
+         
 }
