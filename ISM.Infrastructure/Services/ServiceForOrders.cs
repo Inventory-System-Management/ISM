@@ -11,12 +11,10 @@ namespace ISM.Infrastructure.Services
         public Order Create(Order Objectname)
         {
             return _repository.Create(Objectname);
-           
         }
 
         public int Delete(int id)
         {
-            
             return _repository.Delete(id);
         }
 

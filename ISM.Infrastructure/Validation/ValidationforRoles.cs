@@ -13,7 +13,7 @@ namespace ISM.Infrastructure.Validation
 
         public bool Create(Role objectname)
         {
-            if (objectname != null && objectname.Id != 0 && 
+            if (objectname != null && 
                 (objectname.Position.Contains("Manager", StringComparison.OrdinalIgnoreCase)||
                 objectname.Position.Contains("Seller",StringComparison.OrdinalIgnoreCase)|| 
                 objectname.Position.Contains("Director", StringComparison.OrdinalIgnoreCase)||

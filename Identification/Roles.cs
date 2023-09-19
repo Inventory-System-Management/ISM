@@ -50,30 +50,39 @@ namespace ISM.WebUI
         private void button1_Click(object sender, EventArgs e)
         {
             if (textBox1.Text.Length != 0) MessageBox.Show("Id is Serialize");
-            if (textBox2.Text.Length == 0) MessageBox.Show("Enter Position!" );
+            if (textBox2.Text.Length == 0) { MessageBox.Show("Enter Position!"); return; }
             string position = this.textBox2.Text;
             if (position.Equals("Manager", StringComparison.OrdinalIgnoreCase) ||
             position.Equals("Seller", StringComparison.OrdinalIgnoreCase) ||
-            position.Equals("Manager", StringComparison.OrdinalIgnoreCase) ||
+            position.Equals("Director", StringComparison.OrdinalIgnoreCase) ||
             position.Equals("Customer", StringComparison.OrdinalIgnoreCase))
             {
-                Role roles = new Role();
+                Role roles = new();
                 var Allroles = _serviceforRoles.GetAll();
-                Role? role = Allroles.FirstOrDefault(x => x.Position == roles.Position);
+                Role? role = Allroles.FirstOrDefault(x => x.Position == position);
                 if (role == null)
                 {
-                    roles = role;
-                    _serviceforRoles.Create(roles);
+                    roles.Position = position;
+                    Role role1 = _serviceforRoles.Create(roles);
+                    if (role1.Id != 0) MessageBox.Show("New Role added");
                 }
                 else MessageBox.Show("This Position exist");
-
-
             }
+            else MessageBox.Show("This Position not exist");
         }
 
-        private void Roles_Load(object sender, EventArgs e)
-        {
 
+        private void button3_Click(object sender, EventArgs e)
+        {
+            if (textBox2.Text.Length != 0) { MessageBox.Show("You cant enter position when you want delete !!"); return; }
+            if (textBox1.Text.Length == 1) {
+            int id = Convert.ToInt32(textBox1.Text);
+             int deletedId=_serviceforRoles.Delete(id);
+                if (deletedId != 0) { MessageBox.Show($"{deletedId} is deleted"); return; }
+
+                else MessageBox.Show("this id not exist");
+            }
+            else MessageBox.Show("This id not exist");
         }
     }
 }
