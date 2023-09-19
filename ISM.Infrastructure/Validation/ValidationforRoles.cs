@@ -1,7 +1,6 @@
 ﻿using ISM.Application.interfaces;
 using ISM.Application.Interfaces.Roles;
 using ISM.Domain.Models;
-using ISM.Domain.States;
 using ISM.Infrastructure.ISMDbcontext;
 
 namespace ISM.Infrastructure.Validation
@@ -14,8 +13,12 @@ namespace ISM.Infrastructure.Validation
 
         public bool Create(Role objectname)
         {
-            if (objectname != null && objectname.Id != 0 && (objectname.RoleE == RoleE.Seller || objectname.RoleE == RoleE.Customer || objectname.RoleE == RoleE.Manager || objectname.RoleE == RoleE.Director))
-                return true;
+            if (objectname != null && objectname.Id != 0 && 
+                (objectname.Position.Contains("Manager", StringComparison.OrdinalIgnoreCase)||
+                objectname.Position.Contains("Seller",StringComparison.OrdinalIgnoreCase)|| 
+                objectname.Position.Contains("Director", StringComparison.OrdinalIgnoreCase)||
+                objectname.Position.Contains("Customer", StringComparison.OrdinalIgnoreCase))
+                ) return true;
             return false;
         }
 
@@ -44,8 +47,12 @@ namespace ISM.Infrastructure.Validation
         public bool Update(Role objectname)
         {
             Role? objectid =_ISMdbcontext.Roles.FirstOrDefault(i => i.Id == objectname.Id);
-            if (objectname != null && objectid != null && (objectname.RoleE == RoleE.Seller || objectname.RoleE == RoleE.Customer || objectname.RoleE == RoleE.Manager || objectname.RoleE == RoleE.Director))
-                return true;
+            if (objectname != null && objectname.Id != 0 &&
+                  (objectname.Position.Contains("Manager", StringComparison.OrdinalIgnoreCase) ||
+                  objectname.Position.Contains("Seller", StringComparison.OrdinalIgnoreCase) ||
+                  objectname.Position.Contains("Director", StringComparison.OrdinalIgnoreCase) ||
+                  objectname.Position.Contains("Customer", StringComparison.OrdinalIgnoreCase))
+                  ) return true;
                 return false;
         }
     }
