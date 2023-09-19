@@ -702,7 +702,8 @@
   },
   "projectFileDependencyGroups": {
     "net7.0": [
-      "ISM.Application >= 1.0.0"
+      "ISM.Application >= 1.0.0",
+      "ISM.Domain >= 1.0.0"
     ]
   },
   "packageFolders": {
@@ -734,6 +735,9 @@
           "projectReferences": {
             "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Application\\ISM.Application.csproj": {
               "projectPath": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Application\\ISM.Application.csproj"
+            },
+            "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj": {
+              "projectPath": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj"
             }
           }
         }
@@ -766,5 +770,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Infrastructure\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "8w8X0ftf812I+lyI8zZktmNxoFJ/SpFrDMFkkLCKa1hboNkh1aowZifCexElPzA/jnOTSh0Q5bgucmFGVVvcLQ==",
+  "dgSpecHash": "YfGpHUwd4b2XbRPNxxgouIPFlwsRbCgmP2ISPDyckz5+m49qPsZksa6EkwLUQiMbF+NHJuXUbE3/USamq1d+UA==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Infrastructure\\ISM.Infrastructure.csproj",
   "expectedPackageFiles": [
@@ -20,5 +20,12 @@
     "C:\\Users\\HP\\.nuget\\packages\\npgsql\\7.0.6\\npgsql.7.0.6.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\npgsql.entityframeworkcore.postgresql\\7.0.11\\npgsql.entityframeworkcore.postgresql.7.0.11.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Infrastructure\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

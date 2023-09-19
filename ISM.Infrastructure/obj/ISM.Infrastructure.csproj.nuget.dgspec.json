@@ -156,6 +156,9 @@
             "projectReferences": {
               "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Application\\ISM.Application.csproj": {
                 "projectPath": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Application\\ISM.Application.csproj"
+              },
+              "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj": {
+                "projectPath": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj"
               }
             }
           }

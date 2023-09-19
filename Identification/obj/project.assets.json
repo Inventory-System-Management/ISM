@@ -416,7 +416,8 @@
         "type": "project",
         "framework": ".NETCoreApp,Version=v7.0",
         "dependencies": {
-          "ISM.Application": "1.0.0"
+          "ISM.Application": "1.0.0",
+          "ISM.Domain": "1.0.0"
         },
         "compile": {
           "bin/placeholder/ISM.Infrastructure.dll": {}
@@ -1120,5 +1121,13 @@
         "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\Identification\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }

@@ -1,6 +1,6 @@
 {
   "version": 2,
-  "dgSpecHash": "Uyg9plK7HyhgmGb7iPhaImBMipT/e4Yt81NXj9Nz1KnbRmraGkx0fxlSpCLa4s4+wM9EaLhgKwZ6VSPf4jnf4w==",
+  "dgSpecHash": "WCk+Qv0i82r/uPQCJIVRcpq1z/4GDkPdKMUKWeeTrV+thHpl0JVLb10Rw6CNaSZctI4jgLdaGVrfQGNfYK9wDg==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\Identification\\ISM.WebUI.csproj",
   "expectedPackageFiles": [
@@ -27,5 +27,12 @@
     "C:\\Users\\HP\\.nuget\\packages\\system.text.encodings.web\\7.0.0\\system.text.encodings.web.7.0.0.nupkg.sha512",
     "C:\\Users\\HP\\.nuget\\packages\\system.text.json\\7.0.0\\system.text.json.7.0.0.nupkg.sha512"
   ],
-  "logs": []
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\Identification\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
