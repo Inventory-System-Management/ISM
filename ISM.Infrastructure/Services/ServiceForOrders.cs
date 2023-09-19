@@ -4,20 +4,20 @@ using ISM.Infrastructure.Repositories;
 
 namespace ISM.Infrastructure.Services
 {
-    internal class ServiceForOrders
+    internal class ServiceForOrders:IOrderService
     {
         private IOrderRepository _repository;
         public ServiceForOrders() => _repository = new RepositoriyForOrders();
         public Order Create(Order Objectname)
         {
-            _repository.Create(Objectname);
-            return Objectname;
+            return _repository.Create(Objectname);
+           
         }
 
         public int Delete(int id)
         {
-            _repository.Delete(id);
-            return id;
+            
+            return _repository.Delete(id);
         }
 
         public IEnumerable<Order> GetAll()

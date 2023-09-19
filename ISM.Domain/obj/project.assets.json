@@ -8,23 +8,31 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\suoki\\.nuget\\packages\\": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\suoki\\Desktop\\C#\\ISM.Domain\\ISM.Domain.csproj",
       "projectName": "ISM.Domain",
       "projectPath": "C:\\Users\\suoki\\Desktop\\C#\\ISM.Domain\\ISM.Domain.csproj",
       "packagesPath": "C:\\Users\\suoki\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\suoki\\Desktop\\C#\\ISM.Domain\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Domain\\ISM.Domain.csproj",
+      "projectName": "ISM.Domain",
+      "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Domain\\ISM.Domain.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Domain\\obj\\",
+>>>>>>> 9cbc4d5191a29a88e62c5897a2f1a06fb9a57da2
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\suoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -67,8 +75,16 @@
             "privateAssets": "all"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
-  }
+  },
+  "logs": [
+    {
+      "code": "Undefined",
+      "level": "Warning",
+      "warningLevel": 1,
+      "message": "Problem reading the cache file C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Domain\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+    }
+  ]
 }
