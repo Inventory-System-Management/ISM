@@ -1043,19 +1043,37 @@
     ]
   },
   "packageFolders": {
+<<<<<<< HEAD
     "C:\\Users\\HP\\.nuget\\packages\\": {}
+=======
+    "C:\\Users\\User\\.nuget\\packages\\": {},
+    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
+>>>>>>> 9cbc4d5191a29a88e62c5897a2f1a06fb9a57da2
   },
   "project": {
     "version": "1.0.0",
     "restore": {
+<<<<<<< HEAD
       "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\Identification\\ISM.WebUI.csproj",
       "projectName": "ISM.WebUI",
       "projectPath": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\Identification\\ISM.WebUI.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\Identification\\obj\\",
+=======
+      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\ISM1\\Identification\\ISM.WebUI.csproj",
+      "projectName": "ISM.WebUI",
+      "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM1\\Identification\\ISM.WebUI.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Source\\Repos\\ISM1\\Identification\\obj\\",
+>>>>>>> 9cbc4d5191a29a88e62c5897a2f1a06fb9a57da2
       "projectStyle": "PackageReference",
       "configFilePaths": [
+<<<<<<< HEAD
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> 9cbc4d5191a29a88e62c5897a2f1a06fb9a57da2
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1069,6 +1087,7 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
+<<<<<<< HEAD
             "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Application\\ISM.Application.csproj": {
               "projectPath": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Application\\ISM.Application.csproj"
             },
@@ -1077,6 +1096,16 @@
             },
             "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Infrastructure\\ISM.Infrastructure.csproj": {
               "projectPath": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Infrastructure\\ISM.Infrastructure.csproj"
+=======
+            "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Application\\ISM.Application.csproj": {
+              "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Application\\ISM.Application.csproj"
+            },
+            "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Domain\\ISM.Domain.csproj": {
+              "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Domain\\ISM.Domain.csproj"
+            },
+            "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Infrastructure\\ISM.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM1\\ISM.Infrastructure\\ISM.Infrastructure.csproj"
+>>>>>>> 9cbc4d5191a29a88e62c5897a2f1a06fb9a57da2
             }
           }
         }
@@ -1126,7 +1155,11 @@
       "code": "Undefined",
       "level": "Warning",
       "warningLevel": 1,
+<<<<<<< HEAD
       "message": "Problem reading the cache file C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\Identification\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+=======
+      "message": "Problem reading the cache file C:\\Users\\User\\Source\\Repos\\ISM1\\Identification\\obj\\project.nuget.cache : Invalid property identifier character: <. Path 'version', line 3, position 0."
+>>>>>>> 9cbc4d5191a29a88e62c5897a2f1a06fb9a57da2
     }
   ]
 }
