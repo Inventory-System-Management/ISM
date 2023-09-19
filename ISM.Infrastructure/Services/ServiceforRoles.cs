@@ -31,7 +31,6 @@ namespace ISM.Infrastructure.Services
         {
             return _repository.Getbyid(id);
         }
-
         public bool Update(Role objectname)
         {
             return _repository.Update(objectname);

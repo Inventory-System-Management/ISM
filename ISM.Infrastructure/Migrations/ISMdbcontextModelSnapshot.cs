@@ -181,9 +181,6 @@ namespace ISM.Infrastructure.Migrations
 
                     NpgsqlPropertyBuilderExtensions.UseIdentityByDefaultColumn(b.Property<int>("Id"));
 
-                    b.Property<decimal>("Dept")
-                        .HasColumnType("numeric");
-
                     b.Property<string>("Email")
                         .IsRequired()
                         .HasColumnType("text");
@@ -193,10 +190,6 @@ namespace ISM.Infrastructure.Migrations
                         .HasColumnType("text");
 
                     b.Property<string>("LastName")
-                        .IsRequired()
-                        .HasColumnType("text");
-
-                    b.Property<string>("Login")
                         .IsRequired()
                         .HasColumnType("text");
 
