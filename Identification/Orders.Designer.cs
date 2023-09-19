@@ -49,7 +49,7 @@
             // 
             // button1
             // 
-            button1.Location = new Point(91, 378);
+            button1.Location = new Point(79, 378);
             button1.Name = "button1";
             button1.Size = new Size(124, 46);
             button1.TabIndex = 0;
@@ -59,7 +59,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(221, 380);
+            button2.Location = new Point(209, 380);
             button2.Name = "button2";
             button2.Size = new Size(124, 44);
             button2.TabIndex = 1;
@@ -68,7 +68,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(351, 380);
+            button3.Location = new Point(339, 380);
             button3.Name = "button3";
             button3.Size = new Size(124, 44);
             button3.TabIndex = 2;
@@ -77,7 +77,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(664, 381);
+            button4.Location = new Point(636, 382);
             button4.Name = "button4";
             button4.Size = new Size(124, 44);
             button4.TabIndex = 3;
@@ -88,10 +88,11 @@
             // dataGridView1
             // 
             dataGridView1.AllowUserToOrderColumns = true;
+            dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.BackgroundColor = SystemColors.ActiveBorder;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { OrderId, OrderName, OrderAmount, MaterialInOrder, OrderDate });
-            dataGridView1.Location = new Point(91, 47);
+            dataGridView1.Location = new Point(79, 47);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
@@ -104,35 +105,30 @@
             OrderId.HeaderText = "Id";
             OrderId.MinimumWidth = 6;
             OrderId.Name = "OrderId";
-            OrderId.Width = 125;
             // 
             // OrderName
             // 
             OrderName.HeaderText = "Name";
             OrderName.MinimumWidth = 6;
             OrderName.Name = "OrderName";
-            OrderName.Width = 125;
             // 
             // OrderAmount
             // 
             OrderAmount.HeaderText = "Amount";
             OrderAmount.MinimumWidth = 6;
             OrderAmount.Name = "OrderAmount";
-            OrderAmount.Width = 125;
             // 
             // MaterialInOrder
             // 
             MaterialInOrder.HeaderText = "Material";
             MaterialInOrder.MinimumWidth = 6;
             MaterialInOrder.Name = "MaterialInOrder";
-            MaterialInOrder.Width = 125;
             // 
             // OrderDate
             // 
             OrderDate.HeaderText = "OrderDate";
             OrderDate.MinimumWidth = 6;
             OrderDate.Name = "OrderDate";
-            OrderDate.Width = 125;
             // 
             // label1
             // 
@@ -165,7 +161,7 @@
             // 
             // vScrollBar1
             // 
-            vScrollBar1.Location = new Point(763, 47);
+            vScrollBar1.Location = new Point(762, 47);
             vScrollBar1.Name = "vScrollBar1";
             vScrollBar1.Size = new Size(25, 329);
             vScrollBar1.TabIndex = 17;

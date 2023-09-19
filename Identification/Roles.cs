@@ -20,6 +20,11 @@ namespace ISM.WebUI
             _serviceforRoles = new();
             _allCategories = new();
             InitializeComponent();
+            var allRoles = _serviceforRoles.GetAll();
+            foreach (var role in allRoles)
+            {
+                dataGridView1.Rows.Add(role.Id,role.Position);
+            }
         }
         private void button5_Click(object sender, EventArgs e) =>
             System.Windows.Forms.Application.Exit();
@@ -32,12 +37,13 @@ namespace ISM.WebUI
 
         private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
         {
-            var allRoles = _serviceforRoles.GetAll();
-            foreach (var role in allRoles)
-            {
-                dataGridView1.Rows.Add(role);
-            }
-            
+
+
+        }
+
+        private void button1_Click(object sender, EventArgs e)
+        {
+
         }
     }
 }

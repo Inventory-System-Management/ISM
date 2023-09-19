@@ -197,35 +197,17 @@
   <metadata name="OrderId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="OrderId.HeaderText" xml:space="preserve">
-    <value>Id</value>
-  </data>
-  <data name="OrderId.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="OrderId.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
   <metadata name="PositionName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
     <value>True</value>
   </metadata>
-  <data name="PositionName.HeaderText" xml:space="preserve">
-    <value>Position</value>
-  </data>
-  <data name="PositionName.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <data name="PositionName.Width" type="System.Int32, mscorlib">
-    <value>125</value>
-  </data>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
-    <value>451, 41</value>
+    <value>242, 41</value>
   </data>
   <data name="dataGridView1.RowHeadersWidth" type="System.Int32, mscorlib">
     <value>51</value>
   </data>
   <data name="dataGridView1.Size" type="System.Drawing.Size, System.Drawing">
-    <value>304, 318</value>
+    <value>504, 318</value>
   </data>
   <data name="dataGridView1.TabIndex" type="System.Int32, mscorlib">
     <value>13</value>
@@ -241,6 +223,24 @@
   </data>
   <data name="&gt;&gt;dataGridView1.ZOrder" xml:space="preserve">
     <value>0</value>
+  </data>
+  <metadata name="OrderId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="OrderId.HeaderText" xml:space="preserve">
+    <value>Id</value>
+  </data>
+  <data name="OrderId.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
+  </data>
+  <metadata name="PositionName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
+    <value>True</value>
+  </metadata>
+  <data name="PositionName.HeaderText" xml:space="preserve">
+    <value>Position</value>
+  </data>
+  <data name="PositionName.MinimumWidth" type="System.Int32, mscorlib">
+    <value>6</value>
   </data>
   <data name="button4.Location" type="System.Drawing.Point, System.Drawing">
     <value>280, 379</value>
