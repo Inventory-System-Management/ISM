@@ -33,17 +33,23 @@
             button3 = new Button();
             button4 = new Button();
             dataGridView1 = new DataGridView();
+            OrderId = new DataGridViewTextBoxColumn();
+            OrderName = new DataGridViewTextBoxColumn();
+            OrderAmount = new DataGridViewTextBoxColumn();
+            MaterialInOrder = new DataGridViewTextBoxColumn();
+            OrderDate = new DataGridViewTextBoxColumn();
             label1 = new Label();
             label2 = new Label();
             button5 = new Button();
-            button6 = new Button();
+            vScrollBar1 = new VScrollBar();
+            textBox1 = new TextBox();
             button7 = new Button();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
-            button1.Location = new Point(63, 161);
+            button1.Location = new Point(91, 378);
             button1.Name = "button1";
             button1.Size = new Size(124, 46);
             button1.TabIndex = 0;
@@ -53,7 +59,7 @@
             // 
             // button2
             // 
-            button2.Location = new Point(63, 222);
+            button2.Location = new Point(221, 380);
             button2.Name = "button2";
             button2.Size = new Size(124, 44);
             button2.TabIndex = 1;
@@ -62,7 +68,7 @@
             // 
             // button3
             // 
-            button3.Location = new Point(63, 280);
+            button3.Location = new Point(351, 380);
             button3.Name = "button3";
             button3.Size = new Size(124, 44);
             button3.TabIndex = 2;
@@ -71,7 +77,7 @@
             // 
             // button4
             // 
-            button4.Location = new Point(312, 371);
+            button4.Location = new Point(664, 381);
             button4.Name = "button4";
             button4.Size = new Size(124, 44);
             button4.TabIndex = 3;
@@ -81,13 +87,52 @@
             // 
             // dataGridView1
             // 
+            dataGridView1.AllowUserToOrderColumns = true;
+            dataGridView1.BackgroundColor = SystemColors.ActiveBorder;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(331, 47);
+            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { OrderId, OrderName, OrderAmount, MaterialInOrder, OrderDate });
+            dataGridView1.Location = new Point(91, 47);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(457, 277);
+            dataGridView1.Size = new Size(681, 329);
             dataGridView1.TabIndex = 4;
+            dataGridView1.CellContentClick += dataGridView1_CellContentClick;
+            // 
+            // OrderId
+            // 
+            OrderId.HeaderText = "Id";
+            OrderId.MinimumWidth = 6;
+            OrderId.Name = "OrderId";
+            OrderId.Width = 125;
+            // 
+            // OrderName
+            // 
+            OrderName.HeaderText = "Name";
+            OrderName.MinimumWidth = 6;
+            OrderName.Name = "OrderName";
+            OrderName.Width = 125;
+            // 
+            // OrderAmount
+            // 
+            OrderAmount.HeaderText = "Amount";
+            OrderAmount.MinimumWidth = 6;
+            OrderAmount.Name = "OrderAmount";
+            OrderAmount.Width = 125;
+            // 
+            // MaterialInOrder
+            // 
+            MaterialInOrder.HeaderText = "Material";
+            MaterialInOrder.MinimumWidth = 6;
+            MaterialInOrder.Name = "MaterialInOrder";
+            MaterialInOrder.Width = 125;
+            // 
+            // OrderDate
+            // 
+            OrderDate.HeaderText = "OrderDate";
+            OrderDate.MinimumWidth = 6;
+            OrderDate.Name = "OrderDate";
+            OrderDate.Width = 125;
             // 
             // label1
             // 
@@ -106,10 +151,11 @@
             label2.Size = new Size(53, 20);
             label2.TabIndex = 6;
             label2.Text = "Orders";
+            label2.Click += label2_Click;
             // 
             // button5
             // 
-            button5.Location = new Point(763, -2);
+            button5.Location = new Point(762, 0);
             button5.Name = "button5";
             button5.Size = new Size(38, 28);
             button5.TabIndex = 7;
@@ -117,22 +163,27 @@
             button5.UseVisualStyleBackColor = true;
             button5.Click += button5_Click;
             // 
-            // button6
+            // vScrollBar1
             // 
-            button6.Location = new Point(787, 430);
-            button6.Name = "button6";
-            button6.Size = new Size(8, 8);
-            button6.TabIndex = 8;
-            button6.Text = "button6";
-            button6.UseVisualStyleBackColor = true;
+            vScrollBar1.Location = new Point(763, 47);
+            vScrollBar1.Name = "vScrollBar1";
+            vScrollBar1.Size = new Size(25, 329);
+            vScrollBar1.TabIndex = 17;
+            // 
+            // textBox1
+            // 
+            textBox1.Location = new Point(412, 12);
+            textBox1.Name = "textBox1";
+            textBox1.Size = new Size(147, 27);
+            textBox1.TabIndex = 18;
             // 
             // button7
             // 
-            button7.Location = new Point(201, 222);
+            button7.Location = new Point(565, 10);
             button7.Name = "button7";
-            button7.Size = new Size(124, 44);
-            button7.TabIndex = 16;
-            button7.Text = "ViewAll";
+            button7.Size = new Size(94, 29);
+            button7.TabIndex = 19;
+            button7.Text = "Search";
             button7.UseVisualStyleBackColor = true;
             // 
             // Orders
@@ -141,7 +192,8 @@
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
             Controls.Add(button7);
-            Controls.Add(button6);
+            Controls.Add(textBox1);
+            Controls.Add(vScrollBar1);
             Controls.Add(button5);
             Controls.Add(label2);
             Controls.Add(label1);
@@ -152,6 +204,7 @@
             Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.None;
             Name = "Orders";
+            StartPosition = FormStartPosition.CenterScreen;
             Text = "Orders";
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
@@ -168,7 +221,13 @@
         private Label label1;
         private Label label2;
         private Button button5;
-        private Button button6;
+        private VScrollBar vScrollBar1;
+        private TextBox textBox1;
         private Button button7;
+        private DataGridViewTextBoxColumn OrderId;
+        private DataGridViewTextBoxColumn OrderName;
+        private DataGridViewTextBoxColumn OrderAmount;
+        private DataGridViewTextBoxColumn MaterialInOrder;
+        private DataGridViewTextBoxColumn OrderDate;
     }
 }

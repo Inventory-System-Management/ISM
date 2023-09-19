@@ -15,7 +15,7 @@ namespace ISM.WebUI
         private readonly AllCategories _allCategories;
         public Orders()
         {
-            _allCategories= new ();
+            _allCategories = new();
             InitializeComponent();
         }
 
@@ -38,6 +38,16 @@ namespace ISM.WebUI
         {
             this.Hide();
             _allCategories.Show();
+        }
+
+        private void label2_Click(object sender, EventArgs e)
+        {
+
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
         }
     }
 }

@@ -1,13 +1,17 @@
 ﻿using ISM.Domain.Models;
+using System.Data;
+
 namespace ISM.WebUI;
 
 public partial class AllCategories : Form
 {
     private readonly Identification identification;
     private readonly User user;
+    private readonly Roles roles;
     public AllCategories(User user)
     {
         this.user = user;
+        roles=new();
         identification = new();
         InitializeComponent();
     }
@@ -39,5 +43,8 @@ public partial class AllCategories : Form
 
     private void RolesPictureBox_Click(object sender, EventArgs e)
     {
+        this.Hide();
+        Roles roles = new();
+        roles.Show();
     }
 }
