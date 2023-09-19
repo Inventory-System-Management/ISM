@@ -10,14 +10,14 @@ public class ServiceforStorage : IStorageService
     public ServiceforStorage() => _repository = new RepositoryforStorage();
     public Storage Create(Storage Objectname)
     {
-        _repository.Create(Objectname);
-        return Objectname;
+
+        return _repository.Create(Objectname);
     }
 
     public int Delete(int id)
     {
-        _repository.Delete(id);
-        return id;
+        
+        return _repository.Delete(id);
     }
 
     public IEnumerable<Storage> GetAll()
