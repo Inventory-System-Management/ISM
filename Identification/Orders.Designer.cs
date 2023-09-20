@@ -108,7 +108,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(770, 276);
+            dataGridView1.Size = new Size(759, 263);
             dataGridView1.TabIndex = 4;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -173,7 +173,7 @@
             // 
             // vScrollBar1
             // 
-            vScrollBar1.Location = new Point(774, 47);
+            vScrollBar1.Location = new Point(762, 50);
             vScrollBar1.Name = "vScrollBar1";
             vScrollBar1.Size = new Size(26, 329);
             vScrollBar1.TabIndex = 17;
@@ -280,7 +280,7 @@
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(800, 450);
+            ClientSize = new Size(814, 444);
             Controls.Add(label7);
             Controls.Add(txbStorageId);
             Controls.Add(label6);

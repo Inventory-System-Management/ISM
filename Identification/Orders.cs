@@ -85,7 +85,13 @@ namespace ISM.WebUI
         private void Orders_Load(object sender, EventArgs e)
         {
 
-            dataGridView1.DataSource = _serviceForOrders.GetAll();
+            dataGridView1.DataSource = _serviceForOrders.GetAll().Select(order => new
+            {
+                order.Id,
+                order.UserId,
+                order.OrderDate,
+                order.TotalAmount
+            }).ToList();
         }
 
         private void button2_Click(object sender, EventArgs e)
