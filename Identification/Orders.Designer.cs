@@ -44,6 +44,16 @@
             vScrollBar1 = new VScrollBar();
             textBox1 = new TextBox();
             button7 = new Button();
+            txbDate = new TextBox();
+            label3 = new Label();
+            label4 = new Label();
+            txbTotalAmount = new TextBox();
+            label5 = new Label();
+            txbUserId = new TextBox();
+            label6 = new Label();
+            txbQuantityOrdered = new TextBox();
+            label7 = new Label();
+            txbStorageId = new TextBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             SuspendLayout();
             // 
@@ -98,7 +108,7 @@
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(681, 329);
+            dataGridView1.Size = new Size(681, 248);
             dataGridView1.TabIndex = 4;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -186,11 +196,101 @@
             button7.UseVisualStyleBackColor = true;
             button7.Click += button7_Click;
             // 
+            // txbDate
+            // 
+            txbDate.Location = new Point(29, 349);
+            txbDate.Name = "txbDate";
+            txbDate.Size = new Size(147, 27);
+            txbDate.TabIndex = 20;
+            // 
+            // label3
+            // 
+            label3.AutoSize = true;
+            label3.Location = new Point(29, 326);
+            label3.Name = "label3";
+            label3.Size = new Size(41, 20);
+            label3.TabIndex = 21;
+            label3.Text = "Date";
+            // 
+            // label4
+            // 
+            label4.AutoSize = true;
+            label4.Location = new Point(182, 326);
+            label4.Name = "label4";
+            label4.Size = new Size(95, 20);
+            label4.TabIndex = 23;
+            label4.Text = "TotalAmount";
+            // 
+            // txbTotalAmount
+            // 
+            txbTotalAmount.Location = new Point(182, 349);
+            txbTotalAmount.Name = "txbTotalAmount";
+            txbTotalAmount.Size = new Size(147, 27);
+            txbTotalAmount.TabIndex = 22;
+            // 
+            // label5
+            // 
+            label5.AutoSize = true;
+            label5.Location = new Point(335, 326);
+            label5.Name = "label5";
+            label5.Size = new Size(51, 20);
+            label5.TabIndex = 25;
+            label5.Text = "UserId";
+            // 
+            // txbUserId
+            // 
+            txbUserId.Location = new Point(335, 349);
+            txbUserId.Name = "txbUserId";
+            txbUserId.Size = new Size(147, 27);
+            txbUserId.TabIndex = 24;
+            // 
+            // label6
+            // 
+            label6.AutoSize = true;
+            label6.Location = new Point(488, 326);
+            label6.Name = "label6";
+            label6.Size = new Size(120, 20);
+            label6.TabIndex = 27;
+            label6.Text = "QuantityOrdered";
+            // 
+            // txbQuantityOrdered
+            // 
+            txbQuantityOrdered.Location = new Point(488, 349);
+            txbQuantityOrdered.Name = "txbQuantityOrdered";
+            txbQuantityOrdered.Size = new Size(147, 27);
+            txbQuantityOrdered.TabIndex = 26;
+            // 
+            // label7
+            // 
+            label7.AutoSize = true;
+            label7.Location = new Point(641, 326);
+            label7.Name = "label7";
+            label7.Size = new Size(74, 20);
+            label7.TabIndex = 29;
+            label7.Text = "StorageId";
+            // 
+            // txbStorageId
+            // 
+            txbStorageId.Location = new Point(641, 349);
+            txbStorageId.Name = "txbStorageId";
+            txbStorageId.Size = new Size(147, 27);
+            txbStorageId.TabIndex = 28;
+            // 
             // Orders
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(800, 450);
+            Controls.Add(label7);
+            Controls.Add(txbStorageId);
+            Controls.Add(label6);
+            Controls.Add(txbQuantityOrdered);
+            Controls.Add(label5);
+            Controls.Add(txbUserId);
+            Controls.Add(label4);
+            Controls.Add(txbTotalAmount);
+            Controls.Add(label3);
+            Controls.Add(txbDate);
             Controls.Add(button7);
             Controls.Add(textBox1);
             Controls.Add(vScrollBar1);
@@ -230,5 +330,15 @@
         private DataGridViewTextBoxColumn OrderAmount;
         private DataGridViewTextBoxColumn MaterialInOrder;
         private DataGridViewTextBoxColumn OrderDate;
+        private TextBox txbDate;
+        private Label label3;
+        private Label label4;
+        private TextBox txbTotalAmount;
+        private Label label5;
+        private TextBox txbUserId;
+        private Label label6;
+        private TextBox txbQuantityOrdered;
+        private Label label7;
+        private TextBox txbStorageId;
     }
 }
