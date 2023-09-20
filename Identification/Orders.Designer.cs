@@ -104,11 +104,11 @@
             dataGridView1.BackgroundColor = SystemColors.ActiveBorder;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
             dataGridView1.Columns.AddRange(new DataGridViewColumn[] { OrderId, OrderName, OrderAmount, MaterialInOrder, OrderDate });
-            dataGridView1.Location = new Point(79, 47);
+            dataGridView1.Location = new Point(1, 47);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(681, 248);
+            dataGridView1.Size = new Size(770, 276);
             dataGridView1.TabIndex = 4;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
@@ -173,9 +173,9 @@
             // 
             // vScrollBar1
             // 
-            vScrollBar1.Location = new Point(762, 47);
+            vScrollBar1.Location = new Point(774, 47);
             vScrollBar1.Name = "vScrollBar1";
-            vScrollBar1.Size = new Size(25, 329);
+            vScrollBar1.Size = new Size(26, 329);
             vScrollBar1.TabIndex = 17;
             // 
             // textBox1

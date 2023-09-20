@@ -30,26 +30,27 @@ namespace ISM.WebUI
             //add
 
             #region
-            //if (textBox1.Text.Length != 0) MessageBox.Show("Id is Serialize");
-            //if (textBox2.Text.Length == 0) { MessageBox.Show("Enter Position!"); return; }
-            //string position = this.textBox2.Text;
-            //if (position.Equals("Manager", StringComparison.OrdinalIgnoreCase) ||
-            //position.Equals("Seller", StringComparison.OrdinalIgnoreCase) ||
-            //position.Equals("Director", StringComparison.OrdinalIgnoreCase) ||
-            //position.Equals("Customer", StringComparison.OrdinalIgnoreCase))
-            //{
-            //    Role roles = new();
-            //    var Allroles = _serviceforRoles.GetAll();
-            //    Role? role = Allroles.FirstOrDefault(x => x.Position == position);
-            //    if (role == null)
-            //    {
-            //        roles.Position = position;
-            //        Role role1 = _serviceforRoles.Create(roles);
-            //        if (role1.Id != 0) MessageBox.Show("New Role added");
-            //    }
-            //    else MessageBox.Show("This Position exist");
-            //}
-            //else MessageBox.Show("This Position not exist");
+            //if (txbDate.Text.Length != 0) { MessageBox.Show("Enter Date!"); return; }
+            if (txbTotalAmount.Text.Length == 0) { MessageBox.Show("Enter Amount!"); return; }
+            if (txbUserId.Text.Length == 0) { MessageBox.Show("Enter User Id!"); return; }
+            if (txbQuantityOrdered.Text.Length == 0) { MessageBox.Show("Enter Quantity!"); return; }
+            if (txbStorageId.Text.Length == 0) { MessageBox.Show("Enter Storage Id!"); return; }
+
+            Order order = new()
+            {
+                OrderDate = DateOnly.Parse(txbDate.Text),
+                TotalAmount = double.Parse(txbTotalAmount.Text),
+                UserId = int.Parse(txbUserId.Text),
+                Order_Detail = new Order_Detail()
+                {
+                    QuantityOrdered = long.Parse(txbQuantityOrdered.Text),
+                    StorageId = int.Parse(txbStorageId.Text)
+
+                }
+            };
+            _serviceForOrders.Create(order);
+
+
             #endregion
 
             dataGridView1.DataSource = _serviceForOrders.GetAll();
