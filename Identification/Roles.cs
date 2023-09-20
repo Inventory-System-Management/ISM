@@ -22,10 +22,10 @@ namespace ISM.WebUI
             _allCategories = new();
             InitializeComponent();
             var allRoles = _serviceforRoles.GetAll();
-            foreach (var role in allRoles)
-            {
-                dataGridView1.Rows.Add(role.Id, role.Position);
-            }
+            //foreach (var role in allRoles)
+            //{
+            //    dataGridView1.Rows.Add(role.Id, role.Position);
+            //}
         }
         private void button5_Click(object sender, EventArgs e) =>
             System.Windows.Forms.Application.Exit();
@@ -36,11 +36,7 @@ namespace ISM.WebUI
             _allCategories.Show();
         }
 
-        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
-        {
 
-
-        }
 
         //private ServiceforRoles Get_serviceforRoles()
         //{
@@ -69,20 +65,36 @@ namespace ISM.WebUI
                 else MessageBox.Show("This Position exist");
             }
             else MessageBox.Show("This Position not exist");
+            dataGridView1.DataSource = _serviceforRoles.GetAll();
         }
 
 
         private void button3_Click(object sender, EventArgs e)
         {
             if (textBox2.Text.Length != 0) { MessageBox.Show("You cant enter position when you want delete !!"); return; }
-            if (textBox1.Text.Length == 1) {
-            int id = Convert.ToInt32(textBox1.Text);
-             int deletedId=_serviceforRoles.Delete(id);
-                if (deletedId != 0) { MessageBox.Show($"{deletedId} is deleted"); return; }
+            if (textBox1.Text.Length == 1)
+            {
+                int id = Convert.ToInt32(textBox1.Text);
+                int deletedId = _serviceforRoles.Delete(id);
+                if (deletedId != 0) { MessageBox.Show($"{deletedId} is deleted");
+                dataGridView1.DataSource = _serviceforRoles.GetAll();
+                    
+                    return; }
 
                 else MessageBox.Show("this id not exist");
             }
             else MessageBox.Show("This id not exist");
+        }
+
+        private void dataGridView1_CellContentClick(object sender, DataGridViewCellEventArgs e)
+        {
+
+        }
+
+        private void Roles_Load(object sender, EventArgs e)
+        {
+            dataGridView1.DataSource = _serviceforRoles.GetAll();
+
         }
     }
 }

@@ -65,6 +65,7 @@
             button2.TabIndex = 1;
             button2.Text = "Edit";
             button2.UseVisualStyleBackColor = true;
+            button2.Click += button2_Click;
             // 
             // button3
             // 
@@ -74,6 +75,7 @@
             button3.TabIndex = 2;
             button3.Text = "Delete";
             button3.UseVisualStyleBackColor = true;
+            button3.Click += button3_Click;
             // 
             // button4
             // 
@@ -172,6 +174,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(147, 27);
             textBox1.TabIndex = 18;
+            textBox1.TextChanged += textBox1_TextChanged;
             // 
             // button7
             // 
@@ -181,6 +184,7 @@
             button7.TabIndex = 19;
             button7.Text = "Search";
             button7.UseVisualStyleBackColor = true;
+            button7.Click += button7_Click;
             // 
             // Orders
             // 
@@ -202,6 +206,7 @@
             Name = "Orders";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Orders";
+            Load += Orders_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

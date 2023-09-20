@@ -4,7 +4,7 @@ using ISM.Infrastructure.Repositories;
 
 namespace ISM.Infrastructure.Services
 {
-    internal class ServiceForOrders:IOrderService
+    public class ServiceForOrders:IOrderService
     {
         private IOrderRepository _repository;
         public ServiceForOrders() => _repository = new RepositoriyForOrders();
