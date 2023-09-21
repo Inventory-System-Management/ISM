@@ -76,10 +76,13 @@ namespace ISM.WebUI
             {
                 int id = Convert.ToInt32(textBox1.Text);
                 int deletedId = _serviceforRoles.Delete(id);
-                if (deletedId != 0) { MessageBox.Show($"{deletedId} is deleted");
-                dataGridView1.DataSource = _serviceforRoles.GetAll();
-                    
-                    return; }
+                if (deletedId != 0)
+                {
+                    MessageBox.Show($"{deletedId} is deleted");
+                    dataGridView1.DataSource = _serviceforRoles.GetAll();
+
+                    return;
+                }
 
                 else MessageBox.Show("this id not exist");
             }

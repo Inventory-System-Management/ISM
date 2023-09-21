@@ -13,8 +13,8 @@ public partial class AllCategories : Form
     public AllCategories(User user)
     {
         this.user = user;
-        storages=new Storages();
-        roles =new();
+        storages = new Storages();
+        roles = new();
         identification = new();
         InitializeComponent();
     }

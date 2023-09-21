@@ -8,23 +8,23 @@
     "net7.0": []
   },
   "packageFolders": {
-    "C:\\Users\\suoki\\.nuget\\packages\\": {},
+    "C:\\Users\\Asus\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\suoki\\Desktop\\фыв\\ISM.Domain\\ISM.Domain.csproj",
+      "projectUniqueName": "C:\\Users\\Asus\\Source\\Repos\\ISM\\ISM.Domain\\ISM.Domain.csproj",
       "projectName": "ISM.Domain",
-      "projectPath": "C:\\Users\\suoki\\Desktop\\фыв\\ISM.Domain\\ISM.Domain.csproj",
-      "packagesPath": "C:\\Users\\suoki\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\suoki\\Desktop\\фыв\\ISM.Domain\\obj\\",
+      "projectPath": "C:\\Users\\Asus\\Source\\Repos\\ISM\\ISM.Domain\\ISM.Domain.csproj",
+      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\Asus\\Source\\Repos\\ISM\\ISM.Domain\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\suoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],

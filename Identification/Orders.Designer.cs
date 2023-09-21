@@ -28,6 +28,7 @@
         /// </summary>
         private void InitializeComponent()
         {
+            System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Orders));
             button1 = new Button();
             button2 = new Button();
             button3 = new Button();
@@ -54,47 +55,55 @@
             txbQuantityOrdered = new TextBox();
             label7 = new Label();
             txbStorageId = new TextBox();
+            pictureBox1 = new PictureBox();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
             // 
             // button1
             // 
+            button1.BackColor = SystemColors.ActiveCaption;
             button1.Location = new Point(79, 378);
             button1.Name = "button1";
             button1.Size = new Size(124, 46);
             button1.TabIndex = 0;
             button1.Text = "Add";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // button2
             // 
+            button2.BackColor = SystemColors.ActiveCaption;
             button2.Location = new Point(209, 380);
             button2.Name = "button2";
             button2.Size = new Size(124, 44);
             button2.TabIndex = 1;
             button2.Text = "Edit";
-            button2.UseVisualStyleBackColor = true;
+            button2.UseVisualStyleBackColor = false;
             button2.Click += button2_Click;
             // 
             // button3
             // 
+            button3.BackColor = Color.Red;
+            button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button3.Location = new Point(339, 380);
             button3.Name = "button3";
             button3.Size = new Size(124, 44);
             button3.TabIndex = 2;
             button3.Text = "Delete";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // button4
             // 
+            button4.BackColor = SystemColors.ActiveCaption;
+            button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button4.Location = new Point(636, 382);
             button4.Name = "button4";
             button4.Size = new Size(124, 44);
             button4.TabIndex = 3;
             button4.Text = "Home";
-            button4.UseVisualStyleBackColor = true;
+            button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
             // dataGridView1
@@ -154,21 +163,25 @@
             // label2
             // 
             label2.AutoSize = true;
+            label2.BackColor = Color.Transparent;
+            label2.Font = new Font("Segoe UI", 16.2F, FontStyle.Bold, GraphicsUnit.Point);
+            label2.ForeColor = Color.Red;
             label2.Location = new Point(1, -2);
             label2.Name = "label2";
-            label2.Size = new Size(53, 20);
+            label2.Size = new Size(104, 38);
             label2.TabIndex = 6;
             label2.Text = "Orders";
             label2.Click += label2_Click;
             // 
             // button5
             // 
-            button5.Location = new Point(762, 0);
+            button5.BackColor = Color.Red;
+            button5.Location = new Point(776, -2);
             button5.Name = "button5";
             button5.Size = new Size(38, 28);
             button5.TabIndex = 7;
             button5.Text = "x";
-            button5.UseVisualStyleBackColor = true;
+            button5.UseVisualStyleBackColor = false;
             button5.Click += button5_Click;
             // 
             // vScrollBar1
@@ -188,12 +201,14 @@
             // 
             // button7
             // 
+            button7.BackColor = SystemColors.ActiveCaption;
+            button7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
             button7.Location = new Point(565, 10);
             button7.Name = "button7";
             button7.Size = new Size(94, 29);
             button7.TabIndex = 19;
             button7.Text = "Search";
-            button7.UseVisualStyleBackColor = true;
+            button7.UseVisualStyleBackColor = false;
             button7.Click += button7_Click;
             // 
             // txbDate
@@ -206,6 +221,7 @@
             // label3
             // 
             label3.AutoSize = true;
+            label3.ForeColor = Color.Red;
             label3.Location = new Point(29, 326);
             label3.Name = "label3";
             label3.Size = new Size(41, 20);
@@ -215,6 +231,7 @@
             // label4
             // 
             label4.AutoSize = true;
+            label4.ForeColor = Color.Red;
             label4.Location = new Point(182, 326);
             label4.Name = "label4";
             label4.Size = new Size(95, 20);
@@ -231,6 +248,7 @@
             // label5
             // 
             label5.AutoSize = true;
+            label5.ForeColor = Color.Red;
             label5.Location = new Point(335, 326);
             label5.Name = "label5";
             label5.Size = new Size(51, 20);
@@ -247,6 +265,7 @@
             // label6
             // 
             label6.AutoSize = true;
+            label6.ForeColor = Color.Red;
             label6.Location = new Point(488, 326);
             label6.Name = "label6";
             label6.Size = new Size(120, 20);
@@ -263,6 +282,7 @@
             // label7
             // 
             label7.AutoSize = true;
+            label7.ForeColor = Color.Red;
             label7.Location = new Point(641, 326);
             label7.Name = "label7";
             label7.Size = new Size(74, 20);
@@ -276,11 +296,22 @@
             txbStorageId.Size = new Size(147, 27);
             txbStorageId.TabIndex = 28;
             // 
+            // pictureBox1
+            // 
+            pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
+            pictureBox1.Location = new Point(379, 12);
+            pictureBox1.Name = "pictureBox1";
+            pictureBox1.Size = new Size(36, 29);
+            pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
+            pictureBox1.TabIndex = 30;
+            pictureBox1.TabStop = false;
+            // 
             // Orders
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(814, 444);
+            Controls.Add(pictureBox1);
             Controls.Add(label7);
             Controls.Add(txbStorageId);
             Controls.Add(label6);
@@ -308,6 +339,7 @@
             Text = "Orders";
             Load += Orders_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
+            ((System.ComponentModel.ISupportInitialize)pictureBox1).EndInit();
             ResumeLayout(false);
             PerformLayout();
         }
@@ -340,5 +372,6 @@
         private TextBox txbQuantityOrdered;
         private Label label7;
         private TextBox txbStorageId;
+        private PictureBox pictureBox1;
     }
 }
