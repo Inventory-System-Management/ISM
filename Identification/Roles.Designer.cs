@@ -49,6 +49,7 @@
             // label2
             // 
             resources.ApplyResources(label2, "label2");
+            label2.ForeColor = Color.Red;
             label2.Name = "label2";
             // 
             // button5
@@ -86,23 +87,26 @@
             // 
             // button4
             // 
+            button4.BackColor = SystemColors.ActiveCaption;
             resources.ApplyResources(button4, "button4");
             button4.Name = "button4";
-            button4.UseVisualStyleBackColor = true;
+            button4.UseVisualStyleBackColor = false;
             button4.Click += button4_Click;
             // 
             // button3
             // 
+            button3.BackColor = Color.Red;
             resources.ApplyResources(button3, "button3");
             button3.Name = "button3";
-            button3.UseVisualStyleBackColor = true;
+            button3.UseVisualStyleBackColor = false;
             button3.Click += button3_Click;
             // 
             // button1
             // 
+            button1.BackColor = Color.Red;
             resources.ApplyResources(button1, "button1");
             button1.Name = "button1";
-            button1.UseVisualStyleBackColor = true;
+            button1.UseVisualStyleBackColor = false;
             button1.Click += button1_Click;
             // 
             // vScrollBar1

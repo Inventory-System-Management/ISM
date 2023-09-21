@@ -15,7 +15,7 @@ namespace ISM.Infrastructure.ISMDbcontext
         public DbSet<Supplier> Suppliers { get; set; }
         public DbSet<User> Users { get; set; }
         protected override void OnConfiguring(DbContextOptionsBuilder optionsBuilder) =>
-            optionsBuilder.UseNpgsql("Server=::1;Port=5432;Database=HiGt;User id=postgres;password=adminadmin");
+            optionsBuilder.UseNpgsql("Server=::1;Port=5432;Database=ism;User id=postgres;password=763m44c44V");
         protected override void OnModelCreating(ModelBuilder modelBuilder)
         {
             modelBuilder.Entity<Material>()

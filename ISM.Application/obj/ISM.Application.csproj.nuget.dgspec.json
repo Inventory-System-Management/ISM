@@ -2,6 +2,7 @@
   "format": 1,
   "restore": {
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Application\\ISM.Application.csproj": {}
   },
   "projects": {
@@ -15,23 +16,32 @@
         "outputPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Application\\obj\\",
 =======
     "C:\\Users\\suoki\\Desktop\\фыв\\ISM.Application\\ISM.Application.csproj": {}
+=======
+    "C:\\Users\\Asus\\source\\repos\\ISM\\ISM.Application\\ISM.Application.csproj": {}
+>>>>>>> f6e53396e64b50fff36c3530963be62d6a794287
   },
   "projects": {
-    "C:\\Users\\suoki\\Desktop\\фыв\\ISM.Application\\ISM.Application.csproj": {
+    "C:\\Users\\Asus\\source\\repos\\ISM\\ISM.Application\\ISM.Application.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\suoki\\Desktop\\фыв\\ISM.Application\\ISM.Application.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\ISM\\ISM.Application\\ISM.Application.csproj",
         "projectName": "ISM.Application",
+<<<<<<< HEAD
         "projectPath": "C:\\Users\\suoki\\Desktop\\фыв\\ISM.Application\\ISM.Application.csproj",
         "packagesPath": "C:\\Users\\suoki\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\suoki\\Desktop\\фыв\\ISM.Application\\obj\\",
 >>>>>>> dc5fd7cba1297f001ffa4df2c02828e399a516b3
+=======
+        "projectPath": "C:\\Users\\Asus\\source\\repos\\ISM\\ISM.Application\\ISM.Application.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\source\\repos\\ISM\\ISM.Application\\obj\\",
+>>>>>>> f6e53396e64b50fff36c3530963be62d6a794287
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\suoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
@@ -48,12 +58,17 @@
             "targetAlias": "net7.0",
             "projectReferences": {
 <<<<<<< HEAD
+<<<<<<< HEAD
               "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj": {
                 "projectPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj"
 =======
               "C:\\Users\\suoki\\Desktop\\фыв\\ISM.Domain\\ISM.Domain.csproj": {
                 "projectPath": "C:\\Users\\suoki\\Desktop\\фыв\\ISM.Domain\\ISM.Domain.csproj"
 >>>>>>> dc5fd7cba1297f001ffa4df2c02828e399a516b3
+=======
+              "C:\\Users\\Asus\\source\\repos\\ISM\\ISM.Domain\\ISM.Domain.csproj": {
+                "projectPath": "C:\\Users\\Asus\\source\\repos\\ISM\\ISM.Domain\\ISM.Domain.csproj"
+>>>>>>> f6e53396e64b50fff36c3530963be62d6a794287
               }
             }
           }
@@ -100,6 +115,7 @@
       }
     },
 <<<<<<< HEAD
+<<<<<<< HEAD
     "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -110,20 +126,29 @@
         "outputPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\obj\\",
 =======
     "C:\\Users\\suoki\\Desktop\\фыв\\ISM.Domain\\ISM.Domain.csproj": {
+=======
+    "C:\\Users\\Asus\\source\\repos\\ISM\\ISM.Domain\\ISM.Domain.csproj": {
+>>>>>>> f6e53396e64b50fff36c3530963be62d6a794287
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\suoki\\Desktop\\фыв\\ISM.Domain\\ISM.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\ISM\\ISM.Domain\\ISM.Domain.csproj",
         "projectName": "ISM.Domain",
+<<<<<<< HEAD
         "projectPath": "C:\\Users\\suoki\\Desktop\\фыв\\ISM.Domain\\ISM.Domain.csproj",
         "packagesPath": "C:\\Users\\suoki\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\suoki\\Desktop\\фыв\\ISM.Domain\\obj\\",
 >>>>>>> dc5fd7cba1297f001ffa4df2c02828e399a516b3
+=======
+        "projectPath": "C:\\Users\\Asus\\source\\repos\\ISM\\ISM.Domain\\ISM.Domain.csproj",
+        "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\Asus\\source\\repos\\ISM\\ISM.Domain\\obj\\",
+>>>>>>> f6e53396e64b50fff36c3530963be62d6a794287
         "projectStyle": "PackageReference",
         "fallbackFolders": [
           "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
         ],
         "configFilePaths": [
-          "C:\\Users\\suoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
