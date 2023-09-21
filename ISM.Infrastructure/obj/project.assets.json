@@ -712,11 +712,11 @@
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Infrastructure\\ISM.Infrastructure.csproj",
+      "projectUniqueName": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Infrastructure\\ISM.Infrastructure.csproj",
       "projectName": "ISM.Infrastructure",
-      "projectPath": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Infrastructure\\ISM.Infrastructure.csproj",
+      "projectPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Infrastructure\\ISM.Infrastructure.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Infrastructure\\obj\\",
+      "outputPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Infrastructure\\obj\\",
       "projectStyle": "PackageReference",
       "configFilePaths": [
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
@@ -733,11 +733,11 @@
         "net7.0": {
           "targetAlias": "net7.0",
           "projectReferences": {
-            "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Application\\ISM.Application.csproj": {
-              "projectPath": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Application\\ISM.Application.csproj"
+            "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Application\\ISM.Application.csproj": {
+              "projectPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Application\\ISM.Application.csproj"
             },
-            "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj": {
-              "projectPath": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj"
+            "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj": {
+              "projectPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj"
             }
           }
         }

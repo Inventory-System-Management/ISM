@@ -1,17 +1,17 @@
 {
   "format": 1,
   "restore": {
-    "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj": {}
+    "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj": {}
   },
   "projects": {
-    "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj": {
+    "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
-        "projectUniqueName": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj",
+        "projectUniqueName": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj",
         "projectName": "ISM.Domain",
-        "projectPath": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj",
+        "projectPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-        "outputPath": "C:\\Users\\HP\\Source\\Repos\\ISM_SH2\\ISM.Domain\\obj\\",
+        "outputPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\obj\\",
         "projectStyle": "PackageReference",
         "configFilePaths": [
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",

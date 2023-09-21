@@ -46,7 +46,8 @@ namespace ISM.WebUI
                     QuantityOrdered = long.Parse(txbQuantityOrdered.Text),
                     StorageId = int.Parse(txbStorageId.Text)
 
-                }
+                },
+                //OrderDetailId = int.Parse()
             };
             _serviceForOrders.Create(order);
 
