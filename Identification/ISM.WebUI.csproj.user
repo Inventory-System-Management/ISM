@@ -13,5 +13,8 @@
     <Compile Update="Roles.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Storages.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
 </Project>

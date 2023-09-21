@@ -199,7 +199,7 @@
             AutoSize = true;
             BackgroundImage = (Image)resources.GetObject("$this.BackgroundImage");
             BackgroundImageLayout = ImageLayout.Stretch;
-            ClientSize = new Size(1203, 632);
+            ClientSize = new Size(1203, 703);
             Controls.Add(button1);
             Controls.Add(label2);
             Controls.Add(panel1);
