@@ -16,11 +16,10 @@ namespace ISM.WebUI
 {
     public partial class Orders : Form
     {
-        private readonly AllCategories _allCategories;
+        private AllCategories _allCategories;
         private readonly IOrderService _serviceForOrders;
         public Orders()
         {
-            _allCategories = new();
             _serviceForOrders = new ServiceForOrders();
             InitializeComponent();
         }
@@ -69,6 +68,7 @@ namespace ISM.WebUI
         private void button4_Click(object sender, EventArgs e)
         {
             this.Hide();
+            _allCategories = new();
             _allCategories.Show();
         }
 
@@ -85,13 +85,16 @@ namespace ISM.WebUI
         private void Orders_Load(object sender, EventArgs e)
         {
 
-            dataGridView1.DataSource = _serviceForOrders.GetAll().Select(order => new
+            BindingList<Order> data = new BindingList<Order>();
+            data = (BindingList<Order>)_serviceForOrders.GetAll().Select(order=>new
             {
                 order.Id,
                 order.UserId,
                 order.OrderDate,
                 order.TotalAmount
-            }).ToList();
+            });
+            dataGridView1.DataSource= data;
+
         }
 
         private void button2_Click(object sender, EventArgs e)

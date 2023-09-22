@@ -147,6 +147,7 @@
             textBox2.Size = new Size(249, 27);
             textBox2.TabIndex = 2;
             textBox2.UseSystemPasswordChar = true;
+            textBox2.KeyDown += textBox2_KeyDown;
             // 
             // textBox1
             // 
@@ -156,6 +157,7 @@
             textBox1.Name = "textBox1";
             textBox1.Size = new Size(249, 27);
             textBox1.TabIndex = 1;
+            textBox1.KeyDown += textBox1_KeyDown;
             // 
             // label1
             // 

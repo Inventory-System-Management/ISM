@@ -35,8 +35,8 @@ public partial class AllCategories : Form
 
     private void pictureBox1_Click(object sender, EventArgs e)
     {
-        this.Hide();
         Orders orders = new();
+        this.Hide();
         orders.Show();
     }
     private void pictureBox5_Click(object sender, EventArgs e)
