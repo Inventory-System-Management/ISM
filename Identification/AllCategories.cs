@@ -6,21 +6,20 @@ namespace ISM.WebUI;
 
 public partial class AllCategories : Form
 {
-    private readonly Identification identification;
-    private readonly Storages storages;
+    private readonly Identification identification=new();
     private readonly User user;
-    private readonly Roles roles;
+    //private readonly Roles roles;
     public AllCategories(User user)
     {
         this.user = user;
-        storages = new Storages();
-        roles = new();
-        identification = new();
+        //Storages storages = new Storages();
+        //roles = new();
+        //identification = new();
         InitializeComponent();
     }
     public AllCategories()
     {
-        identification = new();
+        //identification = new();
         InitializeComponent();
     }
     private void label2_Click(object sender, EventArgs e)
@@ -42,6 +41,7 @@ public partial class AllCategories : Form
     private void pictureBox5_Click(object sender, EventArgs e)
     {
         this.Hide();
+        Storages storages = new Storages();
         storages.Show();
     }
 
@@ -50,5 +50,10 @@ public partial class AllCategories : Form
         this.Hide();
         Roles roles = new();
         roles.Show();
+    }
+
+    private void panel1_Paint(object sender, PaintEventArgs e)
+    {
+
     }
 }

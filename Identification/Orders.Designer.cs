@@ -34,11 +34,6 @@
             button3 = new Button();
             button4 = new Button();
             dataGridView1 = new DataGridView();
-            OrderId = new DataGridViewTextBoxColumn();
-            OrderName = new DataGridViewTextBoxColumn();
-            OrderAmount = new DataGridViewTextBoxColumn();
-            MaterialInOrder = new DataGridViewTextBoxColumn();
-            OrderDate = new DataGridViewTextBoxColumn();
             label1 = new Label();
             label2 = new Label();
             button5 = new Button();
@@ -56,6 +51,9 @@
             label7 = new Label();
             txbStorageId = new TextBox();
             pictureBox1 = new PictureBox();
+            txbId = new TextBox();
+            label8 = new Label();
+            label9 = new Label();
             ((System.ComponentModel.ISupportInitialize)dataGridView1).BeginInit();
             ((System.ComponentModel.ISupportInitialize)pictureBox1).BeginInit();
             SuspendLayout();
@@ -112,7 +110,6 @@
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.BackgroundColor = SystemColors.ActiveBorder;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { OrderId, OrderName, OrderAmount, MaterialInOrder, OrderDate });
             dataGridView1.Location = new Point(1, 47);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
@@ -120,36 +117,6 @@
             dataGridView1.Size = new Size(759, 263);
             dataGridView1.TabIndex = 4;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // OrderId
-            // 
-            OrderId.HeaderText = "Id";
-            OrderId.MinimumWidth = 6;
-            OrderId.Name = "OrderId";
-            // 
-            // OrderName
-            // 
-            OrderName.HeaderText = "Name";
-            OrderName.MinimumWidth = 6;
-            OrderName.Name = "OrderName";
-            // 
-            // OrderAmount
-            // 
-            OrderAmount.HeaderText = "Amount";
-            OrderAmount.MinimumWidth = 6;
-            OrderAmount.Name = "OrderAmount";
-            // 
-            // MaterialInOrder
-            // 
-            MaterialInOrder.HeaderText = "Material";
-            MaterialInOrder.MinimumWidth = 6;
-            MaterialInOrder.Name = "MaterialInOrder";
-            // 
-            // OrderDate
-            // 
-            OrderDate.HeaderText = "OrderDate";
-            OrderDate.MinimumWidth = 6;
-            OrderDate.Name = "OrderDate";
             // 
             // label1
             // 
@@ -306,11 +273,41 @@
             pictureBox1.TabIndex = 30;
             pictureBox1.TabStop = false;
             // 
+            // txbId
+            // 
+            txbId.Location = new Point(497, 389);
+            txbId.Name = "txbId";
+            txbId.Size = new Size(104, 27);
+            txbId.TabIndex = 31;
+            // 
+            // label8
+            // 
+            label8.AutoSize = true;
+            label8.ForeColor = Color.Red;
+            label8.Location = new Point(469, 394);
+            label8.Name = "label8";
+            label8.Size = new Size(22, 20);
+            label8.TabIndex = 32;
+            label8.Text = "Id";
+            // 
+            // label9
+            // 
+            label9.AutoSize = true;
+            label9.ForeColor = Color.Red;
+            label9.Location = new Point(351, 16);
+            label9.Name = "label9";
+            label9.Size = new Size(22, 20);
+            label9.TabIndex = 33;
+            label9.Text = "Id";
+            // 
             // Orders
             // 
             AutoScaleDimensions = new SizeF(8F, 20F);
             AutoScaleMode = AutoScaleMode.Font;
             ClientSize = new Size(814, 444);
+            Controls.Add(label9);
+            Controls.Add(label8);
+            Controls.Add(txbId);
             Controls.Add(pictureBox1);
             Controls.Add(label7);
             Controls.Add(txbStorageId);
@@ -373,5 +370,8 @@
         private Label label7;
         private TextBox txbStorageId;
         private PictureBox pictureBox1;
+        private TextBox txbId;
+        private Label label8;
+        private Label label9;
     }
 }

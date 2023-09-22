@@ -31,10 +31,6 @@
             System.ComponentModel.ComponentResourceManager resources = new System.ComponentModel.ComponentResourceManager(typeof(Storages));
             button1 = new Button();
             dataGridView1 = new DataGridView();
-            StorageId = new DataGridViewTextBoxColumn();
-            ItemName = new DataGridViewTextBoxColumn();
-            itemDescryption = new DataGridViewTextBoxColumn();
-            itemAmount = new DataGridViewTextBoxColumn();
             textBox1 = new TextBox();
             button2 = new Button();
             button3 = new Button();
@@ -68,41 +64,12 @@
             // dataGridView1
             // 
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { StorageId, ItemName, itemDescryption, itemAmount });
             dataGridView1.Location = new Point(256, 88);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.Size = new Size(553, 305);
             dataGridView1.TabIndex = 1;
-            // 
-            // StorageId
-            // 
-            StorageId.HeaderText = "Id";
-            StorageId.MinimumWidth = 6;
-            StorageId.Name = "StorageId";
-            StorageId.Width = 125;
-            // 
-            // ItemName
-            // 
-            ItemName.HeaderText = "Name";
-            ItemName.MinimumWidth = 6;
-            ItemName.Name = "ItemName";
-            ItemName.Width = 125;
-            // 
-            // itemDescryption
-            // 
-            itemDescryption.HeaderText = "Description";
-            itemDescryption.MinimumWidth = 6;
-            itemDescryption.Name = "itemDescryption";
-            itemDescryption.Width = 125;
-            // 
-            // itemAmount
-            // 
-            itemAmount.HeaderText = "Amount";
-            itemAmount.MinimumWidth = 6;
-            itemAmount.Name = "itemAmount";
-            itemAmount.Width = 125;
             // 
             // textBox1
             // 
@@ -282,6 +249,7 @@
             Name = "Storages";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Storage";
+            Load += Storages_Load;
             ((System.ComponentModel.ISupportInitialize)dataGridView1).EndInit();
             ResumeLayout(false);
             PerformLayout();

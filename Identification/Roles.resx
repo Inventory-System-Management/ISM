@@ -197,24 +197,6 @@
   <data name="&gt;&gt;label1.ZOrder" xml:space="preserve">
     <value>6</value>
   </data>
-  <metadata name="OrderId.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="OrderId.HeaderText" xml:space="preserve">
-    <value>Id</value>
-  </data>
-  <data name="OrderId.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
-  <metadata name="PositionName.UserAddedColumn" type="System.Boolean, mscorlib, Version=4.0.0.0, Culture=neutral, PublicKeyToken=b77a5c561934e089">
-    <value>True</value>
-  </metadata>
-  <data name="PositionName.HeaderText" xml:space="preserve">
-    <value>Position</value>
-  </data>
-  <data name="PositionName.MinimumWidth" type="System.Int32, mscorlib">
-    <value>6</value>
-  </data>
   <data name="dataGridView1.Location" type="System.Drawing.Point, System.Drawing">
     <value>293, 41</value>
   </data>
@@ -2280,18 +2262,6 @@
   </data>
   <data name="$this.Text" xml:space="preserve">
     <value>Roles</value>
-  </data>
-  <data name="&gt;&gt;OrderId.Name" xml:space="preserve">
-    <value>OrderId</value>
-  </data>
-  <data name="&gt;&gt;OrderId.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
-  </data>
-  <data name="&gt;&gt;PositionName.Name" xml:space="preserve">
-    <value>PositionName</value>
-  </data>
-  <data name="&gt;&gt;PositionName.Type" xml:space="preserve">
-    <value>System.Windows.Forms.DataGridViewTextBoxColumn, System.Windows.Forms, Culture=neutral, PublicKeyToken=b77a5c561934e089</value>
   </data>
   <data name="&gt;&gt;$this.Name" xml:space="preserve">
     <value>Roles</value>

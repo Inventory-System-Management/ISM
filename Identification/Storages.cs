@@ -18,6 +18,7 @@ namespace ISM.WebUI
 
         private void button4_Click(object sender, EventArgs e)
         {
+            dataGridView1.ResumeLayout();
             this.Hide();
             _allCategories.Show();
         }
@@ -59,6 +60,11 @@ namespace ISM.WebUI
             storage.Description = this.textBox3.Text;
             storage.Amount = Convert.ToInt32(this.textBox4.Text);
             _storage.Create(storage);
+        }
+
+        private void Storages_Load(object sender, EventArgs e)
+        {
+            dataGridView1.SuspendLayout();
         }
     }
 }

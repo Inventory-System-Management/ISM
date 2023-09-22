@@ -69,6 +69,7 @@ namespace ISM.WebUI
 
         private void button4_Click(object sender, EventArgs e)
         {
+            dataGridView1.ResumeLayout();
             this.Hide();
             _allCategories.Show();
         }
@@ -85,6 +86,7 @@ namespace ISM.WebUI
 
         private void Orders_Load(object sender, EventArgs e)
         {
+            dataGridView1.SuspendLayout();
 
             dataGridView1.DataSource = _serviceForOrders.GetAll().Select(order => new
             {
@@ -98,26 +100,108 @@ namespace ISM.WebUI
         private void button2_Click(object sender, EventArgs e)
         {
             //edit
-            dataGridView1.DataSource = _serviceForOrders.GetAll();
+            var EditObj = _serviceForOrders.GetAll().
+                                FirstOrDefault(x => x.Id == int.Parse(txbId.Text));
+            if (EditObj != null)
+            {
+                if (txbDate.Text.Length > 0) EditObj.OrderDate = DateOnly.Parse(txbDate.Text);
+                if (txbQuantityOrdered.Text.Length > 0)
+                    EditObj.Order_Detail.QuantityOrdered = long.Parse(txbQuantityOrdered.Text);
+                if (txbStorageId.Text.Length > 0)
+                    EditObj.Order_Detail.StorageId = int.Parse(txbStorageId.Text);
+                if (txbTotalAmount.Text.Length > 0)
+                    EditObj.TotalAmount = double.Parse(txbTotalAmount.Text);
+                if (txbUserId.Text.Length > 0)
+                    EditObj.UserId = int.Parse(txbUserId.Text);
+                _serviceForOrders.Update(EditObj);
+            }
+            dataGridView1.DataSource = _serviceForOrders.GetAll().Select(order => new
+            {
+                order.Id,
+                order.UserId,
+                order.OrderDate,
+                order.TotalAmount
+            }).ToList();
+
         }
 
         private void button3_Click(object sender, EventArgs e)
         {
             //delete
-            dataGridView1.DataSource = _serviceForOrders.GetAll();
+            var deleteObj = _serviceForOrders.GetAll().
+                                FirstOrDefault(x => x.Id == int.Parse(txbId.Text));
+            if (deleteObj != null)
+            {
+                _serviceForOrders.Delete(int.Parse(txbId.Text));
+            }
+            else
+            {
+                Console.WriteLine("not delete!");
+            }
+
+            dataGridView1.DataSource = _serviceForOrders.GetAll().Select(order => new
+            {
+                order.Id,
+                order.UserId,
+                order.OrderDate,
+                order.TotalAmount
+            }).ToList();
         }
 
         private void button7_Click(object sender, EventArgs e)
         {
             //search
-            dataGridView1.DataSource = _serviceForOrders.GetAll().Where(x => x == x);
+            dataGridView1.DataSource = _serviceForOrders.GetAll().
+                    Where(x => x.Id == int.Parse(textBox1.Text)).Select(order => new
+                    {
+                        order.Id,
+                        order.UserId,
+                        order.OrderDate,
+                        order.TotalAmount
+                    }).ToList();
+
         }
 
         private void textBox1_TextChanged(object sender, EventArgs e)
         {
 
-            dataGridView1.DataSource = _serviceForOrders.GetAll();//.
-                                                                  //FirstOrDefault(x => x.Id== int.Parse(textBox1.Text));
+            if (textBox1.Text.Length > 0)
+            {
+
+                var searchObj = _serviceForOrders.GetAll().
+                        FirstOrDefault(x => x.Id == int.Parse(textBox1.Text));
+
+                if (searchObj != null)
+                {
+                    dataGridView1.DataSource = _serviceForOrders.GetAll().
+                        Where(x => x.Id == int.Parse(textBox1.Text)).Select(order => new
+                        {
+                            order.Id,
+                            order.UserId,
+                            order.OrderDate,
+                            order.TotalAmount
+                        }).ToList();
+
+                }
+                else
+                    dataGridView1.DataSource = _serviceForOrders.GetAll().Select(order => new
+                    {
+                        order.Id,
+                        order.UserId,
+                        order.OrderDate,
+                        order.TotalAmount
+                    }).ToList();
+            }
+            else
+            {
+                dataGridView1.DataSource = _serviceForOrders.GetAll().Select(order => new
+                {
+                    order.Id,
+                    order.UserId,
+                    order.OrderDate,
+                    order.TotalAmount
+                }).ToList();
+            }
         }
     }
 }

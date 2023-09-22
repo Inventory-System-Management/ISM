@@ -33,8 +33,6 @@
             button5 = new Button();
             label1 = new Label();
             dataGridView1 = new DataGridView();
-            OrderId = new DataGridViewTextBoxColumn();
-            PositionName = new DataGridViewTextBoxColumn();
             button4 = new Button();
             button3 = new Button();
             button1 = new Button();
@@ -68,22 +66,11 @@
             // 
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Columns.AddRange(new DataGridViewColumn[] { OrderId, PositionName });
             resources.ApplyResources(dataGridView1, "dataGridView1");
             dataGridView1.MultiSelect = false;
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowTemplate.Height = 29;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
-            // 
-            // OrderId
-            // 
-            resources.ApplyResources(OrderId, "OrderId");
-            OrderId.Name = "OrderId";
-            // 
-            // PositionName
-            // 
-            resources.ApplyResources(PositionName, "PositionName");
-            PositionName.Name = "PositionName";
             // 
             // button4
             // 
