@@ -1044,23 +1044,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\Asus\\.nuget\\packages\\": {},
+    "C:\\Users\\suoki\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\Asus\\source\\repos\\ISM\\Identification\\ISM.WebUI.csproj",
+      "projectUniqueName": "C:\\Users\\suoki\\Desktop\\ISm\\Identification\\ISM.WebUI.csproj",
       "projectName": "ISM.WebUI",
-      "projectPath": "C:\\Users\\Asus\\source\\repos\\ISM\\Identification\\ISM.WebUI.csproj",
-      "packagesPath": "C:\\Users\\Asus\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\Asus\\source\\repos\\ISM\\Identification\\obj\\",
+      "projectPath": "C:\\Users\\suoki\\Desktop\\ISm\\Identification\\ISM.WebUI.csproj",
+      "packagesPath": "C:\\Users\\suoki\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\suoki\\Desktop\\ISm\\Identification\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\Asus\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\suoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1076,14 +1076,14 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\Asus\\source\\repos\\ISM\\ISM.Application\\ISM.Application.csproj": {
-              "projectPath": "C:\\Users\\Asus\\source\\repos\\ISM\\ISM.Application\\ISM.Application.csproj"
+            "C:\\Users\\suoki\\Desktop\\ISm\\ISM.Application\\ISM.Application.csproj": {
+              "projectPath": "C:\\Users\\suoki\\Desktop\\ISm\\ISM.Application\\ISM.Application.csproj"
             },
-            "C:\\Users\\Asus\\source\\repos\\ISM\\ISM.Domain\\ISM.Domain.csproj": {
-              "projectPath": "C:\\Users\\Asus\\source\\repos\\ISM\\ISM.Domain\\ISM.Domain.csproj"
+            "C:\\Users\\suoki\\Desktop\\ISm\\ISM.Domain\\ISM.Domain.csproj": {
+              "projectPath": "C:\\Users\\suoki\\Desktop\\ISm\\ISM.Domain\\ISM.Domain.csproj"
             },
-            "C:\\Users\\Asus\\source\\repos\\ISM\\ISM.Infrastructure\\ISM.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\Asus\\source\\repos\\ISM\\ISM.Infrastructure\\ISM.Infrastructure.csproj"
+            "C:\\Users\\suoki\\Desktop\\ISm\\ISM.Infrastructure\\ISM.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\suoki\\Desktop\\ISm\\ISM.Infrastructure\\ISM.Infrastructure.csproj"
             }
           }
         }
