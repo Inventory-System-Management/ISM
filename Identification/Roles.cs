@@ -32,6 +32,7 @@ namespace ISM.WebUI
 
         private void button4_Click(object sender, EventArgs e)
         {
+            dataGridView1.ResumeLayout();
             this.Hide();
             _allCategories.Show();
         }
@@ -96,6 +97,8 @@ namespace ISM.WebUI
 
         private void Roles_Load(object sender, EventArgs e)
         {
+            dataGridView1.SuspendLayout();
+
             dataGridView1.DataSource = _serviceforRoles.GetAll();
 
         }

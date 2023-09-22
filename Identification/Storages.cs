@@ -19,6 +19,7 @@ namespace ISM.WebUI
 
         private void button4_Click(object sender, EventArgs e)
         {
+            dataGridView1.ResumeLayout();
             this.Hide();
             _allCategories.Show();
         }
@@ -62,6 +63,7 @@ namespace ISM.WebUI
             _storage.Create(storage);
         }
 
+<<<<<<< HEAD
         private void button2_Click(object sender, EventArgs e)
         {
             string searchingPattern =this.textBox1.Text;
@@ -73,6 +75,11 @@ namespace ISM.WebUI
                 data.Add(element);
             }
              this.dataGridView1.DataSource= data;
+=======
+        private void Storages_Load(object sender, EventArgs e)
+        {
+            dataGridView1.SuspendLayout();
+>>>>>>> f3be73e9264bea2023e08a31744df38f448be6b9
         }
     }
 }
