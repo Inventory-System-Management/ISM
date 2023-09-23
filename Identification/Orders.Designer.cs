@@ -61,9 +61,10 @@
             // button1
             // 
             button1.BackColor = SystemColors.ActiveCaption;
-            button1.Location = new Point(79, 378);
+            button1.Location = new Point(69, 284);
+            button1.Margin = new Padding(3, 2, 3, 2);
             button1.Name = "button1";
-            button1.Size = new Size(124, 46);
+            button1.Size = new Size(108, 34);
             button1.TabIndex = 0;
             button1.Text = "Add";
             button1.UseVisualStyleBackColor = false;
@@ -72,9 +73,10 @@
             // button2
             // 
             button2.BackColor = SystemColors.ActiveCaption;
-            button2.Location = new Point(209, 380);
+            button2.Location = new Point(183, 285);
+            button2.Margin = new Padding(3, 2, 3, 2);
             button2.Name = "button2";
-            button2.Size = new Size(124, 44);
+            button2.Size = new Size(108, 33);
             button2.TabIndex = 1;
             button2.Text = "Edit";
             button2.UseVisualStyleBackColor = false;
@@ -84,9 +86,10 @@
             // 
             button3.BackColor = Color.Red;
             button3.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button3.Location = new Point(339, 380);
+            button3.Location = new Point(297, 285);
+            button3.Margin = new Padding(3, 2, 3, 2);
             button3.Name = "button3";
-            button3.Size = new Size(124, 44);
+            button3.Size = new Size(108, 33);
             button3.TabIndex = 2;
             button3.Text = "Delete";
             button3.UseVisualStyleBackColor = false;
@@ -96,9 +99,10 @@
             // 
             button4.BackColor = SystemColors.ActiveCaption;
             button4.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button4.Location = new Point(636, 382);
+            button4.Location = new Point(556, 286);
+            button4.Margin = new Padding(3, 2, 3, 2);
             button4.Name = "button4";
-            button4.Size = new Size(124, 44);
+            button4.Size = new Size(108, 33);
             button4.TabIndex = 3;
             button4.Text = "Home";
             button4.UseVisualStyleBackColor = false;
@@ -110,20 +114,21 @@
             dataGridView1.AutoSizeColumnsMode = DataGridViewAutoSizeColumnsMode.Fill;
             dataGridView1.BackgroundColor = SystemColors.ActiveBorder;
             dataGridView1.ColumnHeadersHeightSizeMode = DataGridViewColumnHeadersHeightSizeMode.AutoSize;
-            dataGridView1.Location = new Point(1, 47);
+            dataGridView1.Location = new Point(1, 35);
+            dataGridView1.Margin = new Padding(3, 2, 3, 2);
             dataGridView1.Name = "dataGridView1";
             dataGridView1.RowHeadersWidth = 51;
             dataGridView1.RowTemplate.Height = 29;
-            dataGridView1.Size = new Size(759, 263);
+            dataGridView1.Size = new Size(664, 197);
             dataGridView1.TabIndex = 4;
             dataGridView1.CellContentClick += dataGridView1_CellContentClick;
             // 
             // label1
             // 
             label1.AutoSize = true;
-            label1.Location = new Point(54, 47);
+            label1.Location = new Point(47, 35);
             label1.Name = "label1";
-            label1.Size = new Size(0, 20);
+            label1.Size = new Size(0, 15);
             label1.TabIndex = 5;
             label1.Click += label1_Click;
             // 
@@ -135,7 +140,7 @@
             label2.ForeColor = Color.Red;
             label2.Location = new Point(1, -2);
             label2.Name = "label2";
-            label2.Size = new Size(104, 38);
+            label2.Size = new Size(84, 30);
             label2.TabIndex = 6;
             label2.Text = "Orders";
             label2.Click += label2_Click;
@@ -143,9 +148,10 @@
             // button5
             // 
             button5.BackColor = Color.Red;
-            button5.Location = new Point(776, -2);
+            button5.Location = new Point(679, -2);
+            button5.Margin = new Padding(3, 2, 3, 2);
             button5.Name = "button5";
-            button5.Size = new Size(38, 28);
+            button5.Size = new Size(33, 21);
             button5.TabIndex = 7;
             button5.Text = "x";
             button5.UseVisualStyleBackColor = false;
@@ -153,16 +159,17 @@
             // 
             // vScrollBar1
             // 
-            vScrollBar1.Location = new Point(762, 50);
+            vScrollBar1.Location = new Point(667, 38);
             vScrollBar1.Name = "vScrollBar1";
-            vScrollBar1.Size = new Size(26, 329);
+            vScrollBar1.Size = new Size(26, 247);
             vScrollBar1.TabIndex = 17;
             // 
             // textBox1
             // 
-            textBox1.Location = new Point(412, 12);
+            textBox1.Location = new Point(360, 9);
+            textBox1.Margin = new Padding(3, 2, 3, 2);
             textBox1.Name = "textBox1";
-            textBox1.Size = new Size(147, 27);
+            textBox1.Size = new Size(129, 23);
             textBox1.TabIndex = 18;
             textBox1.TextChanged += textBox1_TextChanged;
             // 
@@ -170,9 +177,10 @@
             // 
             button7.BackColor = SystemColors.ActiveCaption;
             button7.Font = new Font("Segoe UI", 9F, FontStyle.Bold, GraphicsUnit.Point);
-            button7.Location = new Point(565, 10);
+            button7.Location = new Point(494, 8);
+            button7.Margin = new Padding(3, 2, 3, 2);
             button7.Name = "button7";
-            button7.Size = new Size(94, 29);
+            button7.Size = new Size(82, 22);
             button7.TabIndex = 19;
             button7.Text = "Search";
             button7.UseVisualStyleBackColor = false;
@@ -180,18 +188,20 @@
             // 
             // txbDate
             // 
-            txbDate.Location = new Point(29, 349);
+            txbDate.Location = new Point(25, 262);
+            txbDate.Margin = new Padding(3, 2, 3, 2);
             txbDate.Name = "txbDate";
-            txbDate.Size = new Size(147, 27);
+            txbDate.Size = new Size(129, 23);
             txbDate.TabIndex = 20;
+            txbDate.KeyDown += txbDate_KeyDown;
             // 
             // label3
             // 
             label3.AutoSize = true;
             label3.ForeColor = Color.Red;
-            label3.Location = new Point(29, 326);
+            label3.Location = new Point(25, 244);
             label3.Name = "label3";
-            label3.Size = new Size(41, 20);
+            label3.Size = new Size(31, 15);
             label3.TabIndex = 21;
             label3.Text = "Date";
             // 
@@ -199,94 +209,104 @@
             // 
             label4.AutoSize = true;
             label4.ForeColor = Color.Red;
-            label4.Location = new Point(182, 326);
+            label4.Location = new Point(159, 244);
             label4.Name = "label4";
-            label4.Size = new Size(95, 20);
+            label4.Size = new Size(76, 15);
             label4.TabIndex = 23;
             label4.Text = "TotalAmount";
             // 
             // txbTotalAmount
             // 
-            txbTotalAmount.Location = new Point(182, 349);
+            txbTotalAmount.Location = new Point(159, 262);
+            txbTotalAmount.Margin = new Padding(3, 2, 3, 2);
             txbTotalAmount.Name = "txbTotalAmount";
-            txbTotalAmount.Size = new Size(147, 27);
+            txbTotalAmount.Size = new Size(129, 23);
             txbTotalAmount.TabIndex = 22;
+            txbTotalAmount.KeyDown += txbTotalAmount_KeyDown;
             // 
             // label5
             // 
             label5.AutoSize = true;
             label5.ForeColor = Color.Red;
-            label5.Location = new Point(335, 326);
+            label5.Location = new Point(293, 244);
             label5.Name = "label5";
-            label5.Size = new Size(51, 20);
+            label5.Size = new Size(40, 15);
             label5.TabIndex = 25;
             label5.Text = "UserId";
             // 
             // txbUserId
             // 
-            txbUserId.Location = new Point(335, 349);
+            txbUserId.Location = new Point(293, 262);
+            txbUserId.Margin = new Padding(3, 2, 3, 2);
             txbUserId.Name = "txbUserId";
-            txbUserId.Size = new Size(147, 27);
+            txbUserId.Size = new Size(129, 23);
             txbUserId.TabIndex = 24;
+            txbUserId.KeyDown += txbUserId_KeyDown;
             // 
             // label6
             // 
             label6.AutoSize = true;
             label6.ForeColor = Color.Red;
-            label6.Location = new Point(488, 326);
+            label6.Location = new Point(427, 244);
             label6.Name = "label6";
-            label6.Size = new Size(120, 20);
+            label6.Size = new Size(96, 15);
             label6.TabIndex = 27;
             label6.Text = "QuantityOrdered";
             // 
             // txbQuantityOrdered
             // 
-            txbQuantityOrdered.Location = new Point(488, 349);
+            txbQuantityOrdered.Location = new Point(427, 262);
+            txbQuantityOrdered.Margin = new Padding(3, 2, 3, 2);
             txbQuantityOrdered.Name = "txbQuantityOrdered";
-            txbQuantityOrdered.Size = new Size(147, 27);
+            txbQuantityOrdered.Size = new Size(129, 23);
             txbQuantityOrdered.TabIndex = 26;
+            txbQuantityOrdered.KeyDown += txbQuantityOrdered_KeyDown;
             // 
             // label7
             // 
             label7.AutoSize = true;
             label7.ForeColor = Color.Red;
-            label7.Location = new Point(641, 326);
+            label7.Location = new Point(561, 244);
             label7.Name = "label7";
-            label7.Size = new Size(74, 20);
+            label7.Size = new Size(57, 15);
             label7.TabIndex = 29;
             label7.Text = "StorageId";
             // 
             // txbStorageId
             // 
-            txbStorageId.Location = new Point(641, 349);
+            txbStorageId.Location = new Point(561, 262);
+            txbStorageId.Margin = new Padding(3, 2, 3, 2);
             txbStorageId.Name = "txbStorageId";
-            txbStorageId.Size = new Size(147, 27);
+            txbStorageId.Size = new Size(129, 23);
             txbStorageId.TabIndex = 28;
+            txbStorageId.KeyDown += txbStorageId_KeyDown;
             // 
             // pictureBox1
             // 
             pictureBox1.Image = (Image)resources.GetObject("pictureBox1.Image");
-            pictureBox1.Location = new Point(379, 12);
+            pictureBox1.Location = new Point(332, 9);
+            pictureBox1.Margin = new Padding(3, 2, 3, 2);
             pictureBox1.Name = "pictureBox1";
-            pictureBox1.Size = new Size(36, 29);
+            pictureBox1.Size = new Size(32, 22);
             pictureBox1.SizeMode = PictureBoxSizeMode.Zoom;
             pictureBox1.TabIndex = 30;
             pictureBox1.TabStop = false;
             // 
             // txbId
             // 
-            txbId.Location = new Point(497, 389);
+            txbId.Location = new Point(435, 292);
+            txbId.Margin = new Padding(3, 2, 3, 2);
             txbId.Name = "txbId";
-            txbId.Size = new Size(104, 27);
+            txbId.Size = new Size(92, 23);
             txbId.TabIndex = 31;
             // 
             // label8
             // 
             label8.AutoSize = true;
             label8.ForeColor = Color.Red;
-            label8.Location = new Point(469, 394);
+            label8.Location = new Point(410, 296);
             label8.Name = "label8";
-            label8.Size = new Size(22, 20);
+            label8.Size = new Size(17, 15);
             label8.TabIndex = 32;
             label8.Text = "Id";
             // 
@@ -294,17 +314,17 @@
             // 
             label9.AutoSize = true;
             label9.ForeColor = Color.Red;
-            label9.Location = new Point(351, 16);
+            label9.Location = new Point(307, 12);
             label9.Name = "label9";
-            label9.Size = new Size(22, 20);
+            label9.Size = new Size(17, 15);
             label9.TabIndex = 33;
             label9.Text = "Id";
             // 
             // Orders
             // 
-            AutoScaleDimensions = new SizeF(8F, 20F);
+            AutoScaleDimensions = new SizeF(7F, 15F);
             AutoScaleMode = AutoScaleMode.Font;
-            ClientSize = new Size(814, 444);
+            ClientSize = new Size(712, 333);
             Controls.Add(label9);
             Controls.Add(label8);
             Controls.Add(txbId);
@@ -331,6 +351,7 @@
             Controls.Add(button2);
             Controls.Add(button1);
             FormBorderStyle = FormBorderStyle.None;
+            Margin = new Padding(3, 2, 3, 2);
             Name = "Orders";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "Orders";

@@ -44,7 +44,7 @@ namespace ISM.WebUI
 
         private void textBox1_KeyDown(object sender, KeyEventArgs e)
         {
-            if (e.KeyCode == Keys.Enter)
+            if (e.KeyCode == Keys.Enter ||e.KeyCode==Keys.Down)
             {
                 textBox2.Focus();
                 e.SuppressKeyPress = true;
@@ -56,19 +56,24 @@ namespace ISM.WebUI
             if (e.KeyCode == Keys.Enter)
             {
                 if (textBox1.Text.Length == 0) { MessageBox.Show("Enter Login!"); return; }
-            if (textBox2.Text.Length == 0) { MessageBox.Show("Enter Password!"); return; }
-            var user = _checks.Password(textBox1.Text, textBox2.Text);
-            if (user != null)
-            {
-                AllCategories allCategories = new(user);
+                if (textBox2.Text.Length == 0) { MessageBox.Show("Enter Password!"); return; }
+                var user = _checks.Password(textBox1.Text, textBox2.Text);
+                if (user != null)
+                {
+                    AllCategories allCategories = new(user);
 
-                allCategories.Text = "Navigation Bar Example";
-                allCategories.Location = new Point(0, 0);
-                this.Hide();
-                allCategories.Show();
-            }
-            else MessageBox.Show("This user not exist in database !!!");
+                    allCategories.Text = "Navigation Bar Example";
+                    allCategories.Location = new Point(0, 0);
+                    this.Hide();
+                    allCategories.Show();
+                }
+                else MessageBox.Show("This user not exist in database !!!");
                 textBox2.Focus();
+                e.SuppressKeyPress = true;
+            }
+            else if (e.KeyCode == Keys.Up)
+            {
+                textBox1.Focus();
                 e.SuppressKeyPress = true;
             }
         }

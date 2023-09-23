@@ -89,14 +89,14 @@ namespace ISM.WebUI
             dataGridView1.SuspendLayout();
 
             BindingList<Order> data = new BindingList<Order>();
-            data = (BindingList<Order>)_serviceForOrders.GetAll().Select(order=>new
+            data = (BindingList<Order>)_serviceForOrders.GetAll().Select(order => new
             {
                 order.Id,
                 order.UserId,
                 order.OrderDate,
                 order.TotalAmount
             });
-            dataGridView1.DataSource= data;
+            dataGridView1.DataSource = data;
 
         }
 
@@ -204,6 +204,52 @@ namespace ISM.WebUI
                     order.OrderDate,
                     order.TotalAmount
                 }).ToList();
+            }
+        }
+
+        private void txbDate_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txbTotalAmount.Focus();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void txbTotalAmount_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txbUserId.Focus();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void txbUserId_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txbQuantityOrdered.Focus();
+                e.SuppressKeyPress = true;
+            }
+
+        }
+
+        private void txbQuantityOrdered_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txbStorageId.Focus();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void txbStorageId_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txbId.Focus();
+                e.SuppressKeyPress = true;
             }
         }
     }

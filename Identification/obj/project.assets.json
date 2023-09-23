@@ -1044,37 +1044,24 @@
     ]
   },
   "packageFolders": {
-<<<<<<< HEAD
     "C:\\Users\\suoki\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
-=======
-    "C:\\Users\\HP\\.nuget\\packages\\": {}
->>>>>>> f3be73e9264bea2023e08a31744df38f448be6b9
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\suoki\\Desktop\\ISm\\Identification\\ISM.WebUI.csproj",
+      "projectUniqueName": "C:\\Users\\suoki\\Desktop\\ISM\\Identification\\ISM.WebUI.csproj",
       "projectName": "ISM.WebUI",
-      "projectPath": "C:\\Users\\suoki\\Desktop\\ISm\\Identification\\ISM.WebUI.csproj",
+      "projectPath": "C:\\Users\\suoki\\Desktop\\ISM\\Identification\\ISM.WebUI.csproj",
       "packagesPath": "C:\\Users\\suoki\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\suoki\\Desktop\\ISm\\Identification\\obj\\",
-=======
-      "projectUniqueName": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\Identification\\ISM.WebUI.csproj",
-      "projectName": "ISM.WebUI",
-      "projectPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\Identification\\ISM.WebUI.csproj",
-      "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\Identification\\obj\\",
->>>>>>> f3be73e9264bea2023e08a31744df38f448be6b9
+      "outputPath": "C:\\Users\\suoki\\Desktop\\ISM\\Identification\\obj\\",
       "projectStyle": "PackageReference",
+      "fallbackFolders": [
+        "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+      ],
       "configFilePaths": [
-<<<<<<< HEAD
         "C:\\Users\\suoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-=======
-        "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> f3be73e9264bea2023e08a31744df38f448be6b9
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [
@@ -1082,31 +1069,21 @@
       ],
       "sources": {
         "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+        "C:\\Program Files\\dotnet\\library-packs": {},
         "https://api.nuget.org/v3/index.json": {}
       },
       "frameworks": {
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-<<<<<<< HEAD
-            "C:\\Users\\suoki\\Desktop\\ISm\\ISM.Application\\ISM.Application.csproj": {
-              "projectPath": "C:\\Users\\suoki\\Desktop\\ISm\\ISM.Application\\ISM.Application.csproj"
+            "C:\\Users\\suoki\\Desktop\\ISM\\ISM.Application\\ISM.Application.csproj": {
+              "projectPath": "C:\\Users\\suoki\\Desktop\\ISM\\ISM.Application\\ISM.Application.csproj"
             },
-            "C:\\Users\\suoki\\Desktop\\ISm\\ISM.Domain\\ISM.Domain.csproj": {
-              "projectPath": "C:\\Users\\suoki\\Desktop\\ISm\\ISM.Domain\\ISM.Domain.csproj"
+            "C:\\Users\\suoki\\Desktop\\ISM\\ISM.Domain\\ISM.Domain.csproj": {
+              "projectPath": "C:\\Users\\suoki\\Desktop\\ISM\\ISM.Domain\\ISM.Domain.csproj"
             },
-            "C:\\Users\\suoki\\Desktop\\ISm\\ISM.Infrastructure\\ISM.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\suoki\\Desktop\\ISm\\ISM.Infrastructure\\ISM.Infrastructure.csproj"
-=======
-            "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Application\\ISM.Application.csproj": {
-              "projectPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Application\\ISM.Application.csproj"
-            },
-            "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj": {
-              "projectPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj"
-            },
-            "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Infrastructure\\ISM.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Infrastructure\\ISM.Infrastructure.csproj"
->>>>>>> f3be73e9264bea2023e08a31744df38f448be6b9
+            "C:\\Users\\suoki\\Desktop\\ISM\\ISM.Infrastructure\\ISM.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\suoki\\Desktop\\ISM\\ISM.Infrastructure\\ISM.Infrastructure.csproj"
             }
           }
         }
@@ -1147,7 +1124,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
       }
     }
   }
