@@ -66,19 +66,14 @@ namespace ISM.WebUI
 
         private void button2_Click(object sender, EventArgs e)
         {
-            string searchingPattern = this.textBox1.Text;
-
-            var elements = _storage.GetAll().Where(i => i.Name == searchingPattern);
-            BindingList<Storage> data = new BindingList<Storage>();
-            foreach (Storage element in elements)
-            {
-                data.Add(element);
-            }
-            this.dataGridView1.DataSource = data;
-        }
+            string searchingPattern =this.textBox1.Text;
+            var elements= _storage.GetAll().Where(i => i.Name == searchingPattern);
+             this.dataGridView1.DataSource= elements.ToList();
+}
         private void Storages_Load(object sender, EventArgs e)
         {
             dataGridView1.SuspendLayout();
+
         }
     }
 }
