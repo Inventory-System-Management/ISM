@@ -304,6 +304,7 @@
             Name = "AllCategories";
             StartPosition = FormStartPosition.CenterScreen;
             Text = "AllCategories";
+            Load += AllCategories_Load;
             panel1.ResumeLayout(false);
             panel1.PerformLayout();
             ((System.ComponentModel.ISupportInitialize)OrderPictureBox).EndInit();

@@ -1044,23 +1044,23 @@
     ]
   },
   "packageFolders": {
-    "C:\\Users\\suoki\\.nuget\\packages\\": {},
+    "C:\\Users\\User\\.nuget\\packages\\": {},
     "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-      "projectUniqueName": "C:\\Users\\suoki\\Desktop\\ISM\\Identification\\ISM.WebUI.csproj",
+      "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\ISM2\\Identification\\ISM.WebUI.csproj",
       "projectName": "ISM.WebUI",
-      "projectPath": "C:\\Users\\suoki\\Desktop\\ISM\\Identification\\ISM.WebUI.csproj",
-      "packagesPath": "C:\\Users\\suoki\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\suoki\\Desktop\\ISM\\Identification\\obj\\",
+      "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\Identification\\ISM.WebUI.csproj",
+      "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+      "outputPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\Identification\\obj\\",
       "projectStyle": "PackageReference",
       "fallbackFolders": [
         "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
       ],
       "configFilePaths": [
-        "C:\\Users\\suoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
+        "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
@@ -1076,14 +1076,14 @@
         "net7.0-windows7.0": {
           "targetAlias": "net7.0-windows",
           "projectReferences": {
-            "C:\\Users\\suoki\\Desktop\\ISM\\ISM.Application\\ISM.Application.csproj": {
-              "projectPath": "C:\\Users\\suoki\\Desktop\\ISM\\ISM.Application\\ISM.Application.csproj"
+            "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Application\\ISM.Application.csproj": {
+              "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Application\\ISM.Application.csproj"
             },
-            "C:\\Users\\suoki\\Desktop\\ISM\\ISM.Domain\\ISM.Domain.csproj": {
-              "projectPath": "C:\\Users\\suoki\\Desktop\\ISM\\ISM.Domain\\ISM.Domain.csproj"
+            "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Domain\\ISM.Domain.csproj": {
+              "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Domain\\ISM.Domain.csproj"
             },
-            "C:\\Users\\suoki\\Desktop\\ISM\\ISM.Infrastructure\\ISM.Infrastructure.csproj": {
-              "projectPath": "C:\\Users\\suoki\\Desktop\\ISM\\ISM.Infrastructure\\ISM.Infrastructure.csproj"
+            "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Infrastructure\\ISM.Infrastructure.csproj": {
+              "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Infrastructure\\ISM.Infrastructure.csproj"
             }
           }
         }
@@ -1124,7 +1124,7 @@
             "privateAssets": "none"
           }
         },
-        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.302\\RuntimeIdentifierGraph.json"
+        "runtimeIdentifierGraphPath": "C:\\Program Files\\dotnet\\sdk\\7.0.304\\RuntimeIdentifierGraph.json"
       }
     }
   }

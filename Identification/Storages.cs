@@ -39,7 +39,11 @@ namespace ISM.WebUI
                 Char.IsDigit(textBox5.Text[2]) ||
                 Char.IsDigit(textBox5.Text[3])
                 ) { MessageBox.Show("You enter text!!! "); return; }
-            Storage storage = new();
+            Storage storage = new(); if (Char.IsDigit(textBox5.Text[0]) ||
+                Char.IsDigit(textBox5.Text[1]) ||
+                Char.IsDigit(textBox5.Text[2]) ||
+                Char.IsDigit(textBox5.Text[3])
+                ) { MessageBox.Show("You enter text!!! "); return; }
             storage.Name = this.textBox2.Text;
             storage.Description = this.textBox3.Text;
             storage.Amount = Convert.ToInt32(this.textBox4.Text);
