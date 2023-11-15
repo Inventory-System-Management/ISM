@@ -87,12 +87,19 @@ namespace ISM.WebUI
         private void Orders_Load(object sender, EventArgs e)
         {
             dataGridView1.SuspendLayout();
+<<<<<<< HEAD
             dataGridView1.DataSource = _serviceForOrders.GetAll().Select(order => new
+=======
+
+            BindingList<Order> data = new BindingList<Order>();
+            data = (BindingList<Order>)_serviceForOrders.GetAll().Select(order => new
+>>>>>>> 4da1c436c2d0e17ec4e3bdbf115fc6a45254bbb1
             {
                 order.Id,
                 order.UserId,
                 order.OrderDate,
                 order.TotalAmount
+<<<<<<< HEAD
             }).ToList();
             //BindingList<Order> data = new BindingList<Order>();
             //data = (BindingList<Order>)_serviceForOrders.GetAll().Select(order=>new
@@ -103,6 +110,10 @@ namespace ISM.WebUI
             //    order.TotalAmount
             //});
             //dataGridView1.DataSource= data;
+=======
+            });
+            dataGridView1.DataSource = data;
+>>>>>>> 4da1c436c2d0e17ec4e3bdbf115fc6a45254bbb1
 
         }
 
@@ -210,6 +221,52 @@ namespace ISM.WebUI
                     order.OrderDate,
                     order.TotalAmount
                 }).ToList();
+            }
+        }
+
+        private void txbDate_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txbTotalAmount.Focus();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void txbTotalAmount_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txbUserId.Focus();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void txbUserId_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txbQuantityOrdered.Focus();
+                e.SuppressKeyPress = true;
+            }
+
+        }
+
+        private void txbQuantityOrdered_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txbStorageId.Focus();
+                e.SuppressKeyPress = true;
+            }
+        }
+
+        private void txbStorageId_KeyDown(object sender, KeyEventArgs e)
+        {
+            if (e.KeyCode == Keys.Enter)
+            {
+                txbId.Focus();
+                e.SuppressKeyPress = true;
             }
         }
     }

@@ -6,7 +6,7 @@ namespace ISM.WebUI;
 
 public partial class AllCategories : Form
 {
-    private readonly Identification identification=new();
+    private readonly Identification identification = new();
     private readonly User user;
     //private readonly Roles roles;
     public AllCategories(User user)
@@ -53,6 +53,11 @@ public partial class AllCategories : Form
     }
 
     private void panel1_Paint(object sender, PaintEventArgs e)
+    {
+
+    }
+
+    private void AllCategories_Load(object sender, EventArgs e)
     {
 
     }

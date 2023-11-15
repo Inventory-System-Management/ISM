@@ -1,6 +1,7 @@
 {
   "format": 1,
   "restore": {
+<<<<<<< HEAD
     "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Infrastructure\\ISM.Infrastructure.csproj": {}
   },
   "projects": {
@@ -12,9 +13,30 @@
         "projectPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Application\\ISM.Application.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Application\\obj\\",
+=======
+    "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Infrastructure\\ISM.Infrastructure.csproj": {}
+  },
+  "projects": {
+    "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Application\\ISM.Application.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Application\\ISM.Application.csproj",
+        "projectName": "ISM.Application",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Application\\ISM.Application.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Application\\obj\\",
+>>>>>>> 4da1c436c2d0e17ec4e3bdbf115fc6a45254bbb1
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> 4da1c436c2d0e17ec4e3bdbf115fc6a45254bbb1
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -22,14 +44,20 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj": {
                 "projectPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj"
+=======
+              "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Domain\\ISM.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Domain\\ISM.Domain.csproj"
+>>>>>>> 4da1c436c2d0e17ec4e3bdbf115fc6a45254bbb1
               }
             }
           }
@@ -75,6 +103,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -83,9 +112,27 @@
         "projectPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\obj\\",
+=======
+    "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Domain\\ISM.Domain.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Domain\\ISM.Domain.csproj",
+        "projectName": "ISM.Domain",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Domain\\ISM.Domain.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Domain\\obj\\",
+>>>>>>> 4da1c436c2d0e17ec4e3bdbf115fc6a45254bbb1
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> 4da1c436c2d0e17ec4e3bdbf115fc6a45254bbb1
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -93,6 +140,7 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
@@ -130,6 +178,7 @@
         }
       }
     },
+<<<<<<< HEAD
     "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Infrastructure\\ISM.Infrastructure.csproj": {
       "version": "1.0.0",
       "restore": {
@@ -138,9 +187,27 @@
         "projectPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Infrastructure\\ISM.Infrastructure.csproj",
         "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
         "outputPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Infrastructure\\obj\\",
+=======
+    "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Infrastructure\\ISM.Infrastructure.csproj": {
+      "version": "1.0.0",
+      "restore": {
+        "projectUniqueName": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Infrastructure\\ISM.Infrastructure.csproj",
+        "projectName": "ISM.Infrastructure",
+        "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Infrastructure\\ISM.Infrastructure.csproj",
+        "packagesPath": "C:\\Users\\User\\.nuget\\packages\\",
+        "outputPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Infrastructure\\obj\\",
+>>>>>>> 4da1c436c2d0e17ec4e3bdbf115fc6a45254bbb1
         "projectStyle": "PackageReference",
+        "fallbackFolders": [
+          "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages"
+        ],
         "configFilePaths": [
+<<<<<<< HEAD
           "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
+=======
+          "C:\\Users\\User\\AppData\\Roaming\\NuGet\\NuGet.Config",
+          "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
+>>>>>>> 4da1c436c2d0e17ec4e3bdbf115fc6a45254bbb1
           "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
         ],
         "originalTargetFrameworks": [
@@ -148,17 +215,26 @@
         ],
         "sources": {
           "C:\\Program Files (x86)\\Microsoft SDKs\\NuGetPackages\\": {},
+          "C:\\Program Files\\dotnet\\library-packs": {},
           "https://api.nuget.org/v3/index.json": {}
         },
         "frameworks": {
           "net7.0": {
             "targetAlias": "net7.0",
             "projectReferences": {
+<<<<<<< HEAD
               "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Application\\ISM.Application.csproj": {
                 "projectPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Application\\ISM.Application.csproj"
               },
               "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj": {
                 "projectPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj"
+=======
+              "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Application\\ISM.Application.csproj": {
+                "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Application\\ISM.Application.csproj"
+              },
+              "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Domain\\ISM.Domain.csproj": {
+                "projectPath": "C:\\Users\\User\\Source\\Repos\\ISM2\\ISM.Domain\\ISM.Domain.csproj"
+>>>>>>> 4da1c436c2d0e17ec4e3bdbf115fc6a45254bbb1
               }
             }
           }

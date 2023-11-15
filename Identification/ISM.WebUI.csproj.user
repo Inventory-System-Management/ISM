@@ -16,6 +16,9 @@
     <Compile Update="Storages.cs">
       <SubType>Form</SubType>
     </Compile>
+    <Compile Update="Users.cs">
+      <SubType>Form</SubType>
+    </Compile>
   </ItemGroup>
   <ItemGroup>
     <EmbeddedResource Update="Storages.resx">
