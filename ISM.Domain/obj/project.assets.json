@@ -8,37 +8,19 @@
     "net7.0": []
   },
   "packageFolders": {
-<<<<<<< HEAD
-    "C:\\Users\\suoki\\.nuget\\packages\\": {},
-    "C:\\Program Files (x86)\\Microsoft Visual Studio\\Shared\\NuGetPackages": {}
-=======
     "C:\\Users\\HP\\.nuget\\packages\\": {}
->>>>>>> f3be73e9264bea2023e08a31744df38f448be6b9
   },
   "project": {
     "version": "1.0.0",
     "restore": {
-<<<<<<< HEAD
-      "projectUniqueName": "C:\\Users\\suoki\\Desktop\\ISm\\ISM.Domain\\ISM.Domain.csproj",
-      "projectName": "ISM.Domain",
-      "projectPath": "C:\\Users\\suoki\\Desktop\\ISm\\ISM.Domain\\ISM.Domain.csproj",
-      "packagesPath": "C:\\Users\\suoki\\.nuget\\packages\\",
-      "outputPath": "C:\\Users\\suoki\\Desktop\\ISm\\ISM.Domain\\obj\\",
-=======
       "projectUniqueName": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj",
       "projectName": "ISM.Domain",
       "projectPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj",
       "packagesPath": "C:\\Users\\HP\\.nuget\\packages\\",
       "outputPath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\obj\\",
->>>>>>> f3be73e9264bea2023e08a31744df38f448be6b9
       "projectStyle": "PackageReference",
       "configFilePaths": [
-<<<<<<< HEAD
-        "C:\\Users\\suoki\\AppData\\Roaming\\NuGet\\NuGet.Config",
-        "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.FallbackLocation.config",
-=======
         "C:\\Users\\HP\\AppData\\Roaming\\NuGet\\NuGet.Config",
->>>>>>> f3be73e9264bea2023e08a31744df38f448be6b9
         "C:\\Program Files (x86)\\NuGet\\Config\\Microsoft.VisualStudio.Offline.config"
       ],
       "originalTargetFrameworks": [

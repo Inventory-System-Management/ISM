@@ -1,14 +1,8 @@
 {
   "version": 2,
-<<<<<<< HEAD
-  "dgSpecHash": "0dikSTg8n/VgGIvj523nJvUhjR3EM/TCpewMxjMBo371XBoAeveHcxDsIEql7zY8i9Z2aDAN4yTYqRh9NkQ02w==",
-  "success": true,
-  "projectFilePath": "C:\\Users\\suoki\\Desktop\\ISm\\ISM.Domain\\ISM.Domain.csproj",
-=======
   "dgSpecHash": "lG7tkB4FMYkkfySxIXbzetbKG9uPI+g/jB9ARAmj6G7F7MyAWB/q9J24wh+ov3GZjqb66bvzxdvCkNVfFjcCdQ==",
   "success": true,
   "projectFilePath": "C:\\Users\\HP\\source\\repos\\ISM_SH2\\ISM.Domain\\ISM.Domain.csproj",
->>>>>>> f3be73e9264bea2023e08a31744df38f448be6b9
   "expectedPackageFiles": [],
   "logs": []
 }

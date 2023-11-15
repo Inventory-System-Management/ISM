@@ -44,6 +44,8 @@ namespace ISM.WebUI
             storage.Description = this.textBox3.Text;
             storage.Amount = Convert.ToInt32(this.textBox4.Text);
             _storage.Create(storage);
+
+            this.dataGridView1.DataSource = _storage.GetAll().ToList();
         }
         private void button4_click(object sender, EventArgs e)
         {
@@ -61,25 +63,26 @@ namespace ISM.WebUI
             storage.Description = this.textBox3.Text;
             storage.Amount = Convert.ToInt32(this.textBox4.Text);
             _storage.Create(storage);
+            this.dataGridView1.DataSource = _storage.GetAll().ToList();
         }
 
-<<<<<<< HEAD
         private void button2_Click(object sender, EventArgs e)
         {
-            string searchingPattern =this.textBox1.Text;
+            string searchingPattern = this.textBox1.Text;
 
-            var elements= _storage.GetAll().Where(i => i.Name == searchingPattern);
-            BindingList<Storage> data = new BindingList<Storage>();
-            foreach (Storage element in elements)
-            {
-                data.Add(element);
-            }
-             this.dataGridView1.DataSource= data;
-=======
+            var elements = _storage.GetAll().Where(i => i.Name == searchingPattern).ToList();
+            //BindingList<Storage> data = new BindingList<Storage>();
+            //foreach (Storage element in elements)
+            //{
+            //    data.Add(element);
+            //}
+            //this.dataGridView1.DataSource = data;
+            this.dataGridView1.DataSource = elements;
+        }
         private void Storages_Load(object sender, EventArgs e)
         {
             dataGridView1.SuspendLayout();
->>>>>>> f3be73e9264bea2023e08a31744df38f448be6b9
+            this.dataGridView1.DataSource = _storage.GetAll().ToList();
         }
     }
 }
